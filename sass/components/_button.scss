@@ -1,0 +1,25 @@
+@mixin signInBtn {
+  width: 260px;
+  height: 59px;
+  background-color: $body-bg-color;
+  color: $title-color;
+  border: solid 2px $subtitle-color;
+  border-radius: 40px;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  cursor: pointer;
+
+  &:hover{
+      background-color: $subtitle-color;
+      color: $body-bg-color;
+      transition: .5s;
+  }
+
+  &:not(:hover){
+      transition: .5s;
+  }
+}

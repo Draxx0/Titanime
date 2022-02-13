@@ -1,0 +1,148 @@
+//! CARD /////////////////////////////////////////
+
+@mixin signInCard {
+    width: 524px;
+    height: 750px;
+    background-color: $body-bg-color;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+  
+  @mixin logInCard {
+    width: 524px;
+    height: 596px;
+    background-color: $body-bg-color;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+  
+  @mixin animeCard {
+    width: 315.72px;
+    height: 206px;
+    border-radius: 30px;
+    cursor: pointer;
+  
+    &:hover {
+      opacity: 80%;
+      transform: scale(115%);
+      transition: 1s;
+    }
+  
+    &:not(:hover) {
+      transition: 1s;
+    }
+  }
+  
+  @mixin cardTitleStyle {
+    font-family: $poppins;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37px;
+    color: $title-color;
+  }
+  
+  @mixin cardSubtitleStyle {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: $subtitle-color;
+  }
+
+
+  //! LOGO /////////////////////////////////////////
+  @mixin logoStyle {
+    font-family: $montserrat-alternates;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 61px;
+    color: $title-color;
+  }
+
+
+  //! TITLES /////////////////////////////////////////
+
+  @mixin titleStyle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: $title-color;
+  }
+
+  //! TEXTS /////////////////////////////////////////
+
+  @mixin conditionsText {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $conditions-font-size;
+    line-height: 22px;
+    color: $title-color;
+  }
+
+
+  //! LABEL /////////////////////////////////////////
+  @mixin signInLogInLabel {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    color: $subtitle-color;
+  }
+
+  //! INPUT /////////////////////////////////////////
+  @mixin signInLogInInput {
+      border: solid 1px $subtitle-color;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background-color: $body-bg-color;
+
+      &:focus{
+          outline: none;
+          color: $title-color;
+          font-family: $poppins;
+          font-size: $input-font-size;
+      }
+
+      &:valid{
+          color: $title-color;
+          font-family: $poppins;
+          font-size: $input-font-size;
+          border-bottom: 1px solid green;
+          transition: 1s;
+      }
+
+      &:invalid{
+        color: $title-color;
+        font-family: $poppins;
+        font-size: $input-font-size;
+        border-bottom: 1px solid red;
+        transition: 1s;
+      }
+  }
+
+  @mixin footerStyle {
+      width: 100%;
+      height: 266px;
+      background-color: $nav-bg-color;
+      color: $title-color;
+      margin-top: 200px;
+  }
+
+  @mixin footerItemStyle {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 37px;
+    color: $title-color;
+  }
+
+  
