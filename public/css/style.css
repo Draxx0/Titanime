@@ -550,6 +550,370 @@ a:not(:hover) {
   margin-top: 20px;
   animation: progress-animation 2s linear infinite;
 }
+.homepage_main .homepage_upcoming {
+  margin-top: 58px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.homepage_main .homepage_upcoming_cards {
+  display: flex;
+  gap: 100px;
+  margin-top: 40px;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/OnePieceImg.jpg");
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img .homepage_upcoming_first_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/FairyTailImg.jpeg");
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img .homepage_upcoming_second_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/NarutoImg.jpg");
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img .homepage_upcoming_third_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/HXH-bg.jpg");
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img .homepage_upcoming_fourth_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_card_title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 37px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_card_text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #DADADA;
+  text-align: center;
+}
+.homepage_main .homepage_top_anime_week {
+  margin-top: 58px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.homepage_main .homepage_top_anime_week_cards {
+  margin-top: 40px;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/OnePieceImg.jpg");
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img .homepage_top_anime_week_first_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/FairyTailImg.jpeg");
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img .homepage_top_anime_week_second_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/NarutoImg.jpg");
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img .homepage_top_anime_week_third_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/HXH-bg.jpg");
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img .homepage_top_anime_week_fourth_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line {
+  display: flex;
+  gap: 100px;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/OnePieceImg.jpg");
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img .homepage_top_anime_week_fifht_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/FairyTailImg.jpeg");
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img .homepage_top_anime_week_sixth_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/NarutoImg.jpg");
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img .homepage_top_anime_week_seventh_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/HXH-bg.jpg");
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img .homepage_top_anime_week_eighth_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_card_title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 37px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
 
 @keyframes videoTextAnimationHover {
   from {

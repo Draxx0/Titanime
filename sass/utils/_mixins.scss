@@ -27,11 +27,11 @@
   &:hover {
     opacity: 50%;
     transform: scale(105%);
-    transition:.5s;
+    transition: 0.5s;
   }
 
   &:not(:hover) {
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 

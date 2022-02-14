@@ -84,6 +84,7 @@
     gap: 100px;
     margin-top: 40px;
 
+
     .homepage_continue_watching_first_card {
       .homepage_continue_watching_first_card_img {
         @include animeCard;
@@ -149,6 +150,185 @@
       animation: progress-animation 2s linear infinite;
     }
   }
+
+  //! HOMEPAGE UPCOMING SECTION
+  .homepage_upcoming{
+    margin-top: 58px;
+    @include subtitleStyle
+  }
+
+  .homepage_upcoming_cards {
+    display: flex;
+    gap: 100px;
+    margin-top: 40px;
+
+    .homepage_upcoming_first_card {
+      .homepage_upcoming_first_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/OnePieceImg.jpg");
+
+        .homepage_upcoming_first_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+
+    .homepage_upcoming_second_card {
+      .homepage_upcoming_second_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/FairyTailImg.jpeg");
+
+        .homepage_upcoming_second_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+
+    .homepage_upcoming_third_card {
+      .homepage_upcoming_third_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/NarutoImg.jpg");
+
+        .homepage_upcoming_third_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+
+    .homepage_upcoming_fourth_card {
+      .homepage_upcoming_fourth_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/HXH-bg.jpg");
+
+        .homepage_upcoming_fourth_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+
+    .homepage_upcoming_card_title {
+      @include cardTitleStyle;
+    }
+
+    .homepage_upcoming_card_text {
+      @include cardSubtitleStyle;
+    }
+  }
+
+//! HOMEPAGE TOP  ANIME SECTION 
+
+.homepage_top_anime_week{
+  margin-top: 58px;
+  @include subtitleStyle
+}
+
+.homepage_top_anime_week_cards {
+  margin-top: 40px;  
+
+  .homepage_top_anime_week_first_line{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 100px;
+
+    .homepage_top_anime_week_first_card {
+      .homepage_top_anime_week_first_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/OnePieceImg.jpg");
+  
+        .homepage_top_anime_week_first_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+  
+    .homepage_top_anime_week_second_card {
+      .homepage_top_anime_week_second_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/FairyTailImg.jpeg");
+  
+        .homepage_top_anime_week_second_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+  
+    .homepage_top_anime_week_third_card {
+      .homepage_top_anime_week_third_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/NarutoImg.jpg");
+  
+        .homepage_top_anime_week_third_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+  
+    .homepage_top_anime_week_fourth_card {
+      .homepage_top_anime_week_fourth_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/HXH-bg.jpg");
+  
+        .homepage_top_anime_week_fourth_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+  
+  }
+  .homepage_top_anime_week_second_line{
+    display: flex;
+    gap: 100px;
+
+    .homepage_top_anime_week_fifht_card {
+      .homepage_top_anime_week_fifht_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/OnePieceImg.jpg");
+  
+        .homepage_top_anime_week_fifht_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+  
+    .homepage_top_anime_week_sixth_card {
+      .homepage_top_anime_week_sixth_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/FairyTailImg.jpeg");
+  
+        .homepage_top_anime_week_sixth_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+  
+    .homepage_top_anime_week_seventh_card {
+      .homepage_top_anime_week_seventh_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/NarutoImg.jpg");
+  
+        .homepage_top_anime_week_seventh_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+  
+    .homepage_top_anime_week_eighth_card {
+      .homepage_top_anime_week_eighth_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/HXH-bg.jpg");
+  
+        .homepage_top_anime_week_eighth_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+  
+  }
+
+  .homepage_top_anime_week_card_title {
+    @include cardTitleStyle;
+  }
+}
 }
 
 @keyframes videoTextAnimationHover {
