@@ -11,16 +11,9 @@ a {
   text-decoration: none;
   color: #ffffff;
 }
-a:hover {
-  transform: scale(110%);
-  transition: 0.5s;
-}
-a:not(:hover) {
-  transition: 0.5s;
-}
 
 .sign_in_body {
-  background-image: url("../../public/Img/SignInBg.jpg");
+  background-image: url("../../public/Img/Card/DragonBallZ/DbzBg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -426,7 +419,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/SnkImg.png");
+  background-image: url("../../public/Img/Card/Snk/SnkImg.png");
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img:hover {
   opacity: 50%;
@@ -451,7 +444,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/MhaImg.jpg");
+  background-image: url("../../public/Img/Card/Mha/MhaImg.jpg");
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img:hover {
   opacity: 50%;
@@ -476,7 +469,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/JjkImg.jpg");
+  background-image: url("../../public/Img/Card/Jjk/JjkImg.jpg");
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img:hover {
   opacity: 50%;
@@ -501,7 +494,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/DeathParadeImg.png");
+  background-image: url("../../public/Img/Card/DeathParade/DeathParadeImg.png");
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img:hover {
   opacity: 50%;
@@ -571,7 +564,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/OnePieceImg.jpg");
+  background-image: url("../../public/Img/Card/OnePiece/OnePieceImg.jpg");
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img:hover {
   opacity: 50%;
@@ -596,7 +589,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/FairyTailImg.jpeg");
+  background-image: url("../../public/Img/Card/FairyTail/FairyTailImg.jpeg");
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img:hover {
   opacity: 50%;
@@ -621,7 +614,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/NarutoImg.jpg");
+  background-image: url("../../public/Img/Card/NarutoShippuden/NarutoImg.jpg");
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img:hover {
   opacity: 50%;
@@ -646,7 +639,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/HXH-bg.jpg");
+  background-image: url("../../public/Img/Card/Hxh/HXH-bg.jpg");
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img:hover {
   opacity: 50%;
@@ -707,7 +700,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/OnePieceImg.jpg");
+  background-image: url("../../public/Img/Card/Snk/SnkBg2.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img:hover {
   opacity: 50%;
@@ -732,7 +725,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/FairyTailImg.jpeg");
+  background-image: url("../../public/Img/Card/Mha/MhaBg.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img:hover {
   opacity: 50%;
@@ -757,7 +750,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/NarutoImg.jpg");
+  background-image: url("../../public/Img/Card/DemonSlayer/DemonSlayerBg.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img:hover {
   opacity: 50%;
@@ -769,11 +762,11 @@ a:not(:hover) {
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img .homepage_top_anime_week_third_card_logo {
   position: absolute;
-  width: 260px;
-  height: 84px;
+  width: 160px;
+  height: 104px;
   left: 207px;
-  top: 120px;
-  left: 10%;
+  top: 100px;
+  left: 25%;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img {
   position: relative;
@@ -782,7 +775,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/HXH-bg.jpg");
+  background-image: url("../../public/Img/Card/Jjk/JjkBg2.png");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img:hover {
   opacity: 50%;
@@ -811,7 +804,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/OnePieceImg.jpg");
+  background-image: url("../../public/Img/Card/TokyoRevengers/tokyoRevengersBg.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img:hover {
   opacity: 50%;
@@ -836,7 +829,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/FairyTailImg.jpeg");
+  background-image: url("../../public/Img/Card/Nagatoro/NagarotoBg.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img:hover {
   opacity: 50%;
@@ -861,7 +854,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/NarutoImg.jpg");
+  background-image: url("../../public/Img/Card/Erased/ErasedBg.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img:hover {
   opacity: 50%;
@@ -886,7 +879,7 @@ a:not(:hover) {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/HXH-bg.jpg");
+  background-image: url("../../public/Img/Card/DragonBallZ/DragonBallZBg2.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img:hover {
   opacity: 50%;
@@ -938,6 +931,15 @@ a:not(:hover) {
   100% {
     background-position: 0;
   }
+}
+.account_body {
+  background-color: #1f1f1f;
+}
+
+.account_header {
+  width: 100%;
+  height: 470px;
+  background-image: url("../../public/Img/Card/Hxh/HXH-bg.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

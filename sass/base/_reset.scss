@@ -6,13 +6,4 @@
 a {
   text-decoration: none;
   color: $title-color;
-
-  &:hover {
-    transform: scale(110%);
-    transition: 0.5s;
-  }
-
-  &:not(:hover) {
-    transition: 0.5s;
-  }
 }
