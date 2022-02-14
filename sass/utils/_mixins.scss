@@ -1,148 +1,185 @@
 //! CARD /////////////////////////////////////////
 
 @mixin signInCard {
-    width: 524px;
-    height: 750px;
-    background-color: $body-bg-color;
-    border-radius: 20px;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  width: 524px;
+  height: 750px;
+  background-color: $body-bg-color;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+@mixin logInCard {
+  width: 524px;
+  height: 596px;
+  background-color: $body-bg-color;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+@mixin animeCard {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 50%;
+    transform: scale(105%);
+    transition:.5s;
   }
-  
-  @mixin logInCard {
-    width: 524px;
-    height: 596px;
-    background-color: $body-bg-color;
-    border-radius: 20px;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+
+  &:not(:hover) {
+    transition: .5s;
   }
-  
-  @mixin animeCard {
-    width: 315.72px;
-    height: 206px;
-    border-radius: 30px;
-    cursor: pointer;
-  
-    &:hover {
-      opacity: 80%;
-      transform: scale(115%);
-      transition: 1s;
-    }
-  
-    &:not(:hover) {
-      transition: 1s;
-    }
-  }
-  
-  @mixin cardTitleStyle {
+}
+
+@mixin cardLogoStyle {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+
+@mixin cardTitleStyle {
+  font-family: $poppins;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 37px;
+  color: $title-color;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@mixin cardSubtitleStyle {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: $subtitle-color;
+  text-align: center;
+}
+
+//! LOGO /////////////////////////////////////////
+@mixin logoStyle {
+  font-family: $montserrat-alternates;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 61px;
+  color: $title-color;
+}
+
+//! TITLES /////////////////////////////////////////
+
+@mixin titleStyle {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: $title-color;
+}
+
+@mixin subtitleStyle {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: $title-color;
+}
+
+//! TEXTS /////////////////////////////////////////
+
+@mixin conditionsText {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $conditions-font-size;
+  line-height: 22px;
+  color: $title-color;
+}
+
+//! LABEL /////////////////////////////////////////
+@mixin signInLogInLabel {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: $subtitle-color;
+}
+
+//! INPUT /////////////////////////////////////////
+@mixin signInLogInInput {
+  border: solid 1px $subtitle-color;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: $body-bg-color;
+
+  &:focus {
+    outline: none;
+    color: $title-color;
     font-family: $poppins;
-    font-style: normal;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 37px;
-    color: $title-color;
+    font-size: $input-font-size;
   }
-  
-  @mixin cardSubtitleStyle {
+
+  &:valid {
+    color: $title-color;
     font-family: $poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 22px;
-    color: $subtitle-color;
+    font-size: $input-font-size;
+    border-bottom: 1px solid green;
+    transition: 1s;
   }
 
-
-  //! LOGO /////////////////////////////////////////
-  @mixin logoStyle {
-    font-family: $montserrat-alternates;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 61px;
+  &:invalid {
     color: $title-color;
-  }
-
-
-  //! TITLES /////////////////////////////////////////
-
-  @mixin titleStyle {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 60px;
-    color: $title-color;
-  }
-
-  //! TEXTS /////////////////////////////////////////
-
-  @mixin conditionsText {
     font-family: $poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: $conditions-font-size;
-    line-height: 22px;
-    color: $title-color;
+    font-size: $input-font-size;
+    border-bottom: 1px solid red;
+    transition: 1s;
+  }
+}
+
+//! FOOTER /////////////////////////////////////////
+
+@mixin footerStyle {
+  width: 100%;
+  height: 266px;
+  background-color: $nav-bg-color;
+  color: $title-color;
+  margin-top: 200px;
+}
+
+@mixin footerItemStyle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  color: $title-color;
+}
+
+//! ACCOUNT PICTURES /////////////////////////////////////////
+
+@mixin accountPicture {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+
+  &:hover {
+    filter: grayscale(30%);
+    transition: 0.5s;
   }
 
-
-  //! LABEL /////////////////////////////////////////
-  @mixin signInLogInLabel {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 37px;
-    color: $subtitle-color;
+  &:not(:hover) {
+    transition: 0.5s;
   }
-
-  //! INPUT /////////////////////////////////////////
-  @mixin signInLogInInput {
-      border: solid 1px $subtitle-color;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      background-color: $body-bg-color;
-
-      &:focus{
-          outline: none;
-          color: $title-color;
-          font-family: $poppins;
-          font-size: $input-font-size;
-      }
-
-      &:valid{
-          color: $title-color;
-          font-family: $poppins;
-          font-size: $input-font-size;
-          border-bottom: 1px solid green;
-          transition: 1s;
-      }
-
-      &:invalid{
-        color: $title-color;
-        font-family: $poppins;
-        font-size: $input-font-size;
-        border-bottom: 1px solid red;
-        transition: 1s;
-      }
-  }
-
-  @mixin footerStyle {
-      width: 100%;
-      height: 266px;
-      background-color: $nav-bg-color;
-      color: $title-color;
-      margin-top: 200px;
-  }
-
-  @mixin footerItemStyle {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 37px;
-    color: $title-color;
-  }
-
-  
+}

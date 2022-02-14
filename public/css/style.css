@@ -59,7 +59,7 @@ a:not(:hover) {
   justify-content: center;
   margin-top: 37px;
   margin-bottom: 43px;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -251,25 +251,25 @@ a:not(:hover) {
   color: #ffffff;
 }
 
-.sign_in_footer {
+.footer {
   width: 100%;
   height: 266px;
   background-color: #0f0f0f;
   color: #ffffff;
   margin-top: 200px;
 }
-.sign_in_footer .footer_container {
+.footer .footer_container {
   width: 80%;
   height: 100%;
   margin: auto;
 }
-.sign_in_footer .footer_container .footer_content_displaying {
+.footer .footer_container .footer_content_displaying {
   display: flex;
   justify-content: center;
   gap: 20px;
   height: 100%;
 }
-.sign_in_footer .footer_container .footer_content_displaying .first_column {
+.footer .footer_container .footer_content_displaying .first_column {
   width: 20%;
   height: 100%;
   display: flex;
@@ -278,19 +278,19 @@ a:not(:hover) {
   justify-content: center;
   align-items: flex-start;
 }
-.sign_in_footer .footer_container .footer_content_displaying .second_column {
+.footer .footer_container .footer_content_displaying .second_column {
   width: 60%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sign_in_footer .footer_container .footer_content_displaying .second_column .footer_list {
+.footer .footer_container .footer_content_displaying .second_column .footer_list {
   display: flex;
   list-style: none;
   gap: 183px;
 }
-.sign_in_footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items {
+.footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -298,7 +298,7 @@ a:not(:hover) {
   line-height: 37px;
   color: #ffffff;
 }
-.sign_in_footer .footer_container .footer_content_displaying .third_column {
+.footer .footer_container .footer_content_displaying .third_column {
   width: 20%;
   height: 100%;
   display: flex;
@@ -316,6 +316,263 @@ a:not(:hover) {
   to {
     width: 356px;
     opacity: 1;
+  }
+}
+.homepage_body {
+  background-color: #1f1f1f;
+}
+
+.homepage_nav {
+  width: 100%;
+  height: 112px;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homepage_nav .homepage_logo {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 61px;
+  color: #ffffff;
+  padding-left: 57px;
+  cursor: pointer;
+}
+.homepage_nav .homepage_account {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  padding-right: 57px;
+}
+.homepage_nav .homepage_account:hover {
+  filter: grayscale(30%);
+  transition: 0.5s;
+}
+.homepage_nav .homepage_account:not(:hover) {
+  transition: 0.5s;
+}
+
+.homepage_header {
+  width: 100%;
+  height: 100%;
+}
+.homepage_header .homepage_video_displaying {
+  position: relative;
+}
+.homepage_header .homepage_video_displaying .homepage_video {
+  opacity: 60%;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.homepage_header .homepage_video_displaying .homepage_video_logo {
+  position: absolute;
+  left: 57px;
+  top: 187px;
+  width: 218px;
+  height: 207px;
+}
+.homepage_header .homepage_video_displaying .homepage_video_text {
+  position: absolute;
+  left: 57px;
+  top: 420px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+}
+.homepage_header .homepage_video_displaying .homepage_video_text:hover {
+  transform: scale(103%);
+  transition: 0.5s;
+}
+.homepage_header .homepage_video_displaying .homepage_video_text:hover .fa-chevron-right {
+  animation: videoTextAnimationHover 0.5s forwards;
+}
+.homepage_header .homepage_video_displaying .homepage_video_text:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_header .homepage_video_displaying .homepage_video_text:not(:hover) .fa-chevron-right {
+  animation: videoTextAnimationNotHover 0.5s forwards;
+}
+
+.homepage_main {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 100px;
+}
+.homepage_main .homepage_continue_watching {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.homepage_main .homepage_continue_watching_cards {
+  display: flex;
+  gap: 100px;
+  margin-top: 40px;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/SnkImg.png");
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img .homepage_continue_watching_first_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/MhaImg.jpg");
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img .homepage_continue_watching_second_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/JjkImg.jpg");
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img .homepage_continue_watching_third_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img {
+  position: relative;
+  width: 315.72px;
+  height: 206px;
+  border-radius: 30px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../../public/Img/Card/DeathParadeImg.png");
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img:hover {
+  opacity: 50%;
+  transform: scale(105%);
+  transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img:not(:hover) {
+  transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img .homepage_continue_watching_fourth_card_logo {
+  position: absolute;
+  width: 260px;
+  height: 84px;
+  left: 207px;
+  top: 120px;
+  left: 10%;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_card_title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 37px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_card_text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #DADADA;
+  text-align: center;
+}
+.homepage_main .homepage_continue_watching_cards .progressbar {
+  width: 301px;
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, grey, white, grey, white);
+  background-size: 300% 100%;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  animation: progress-animation 2s linear infinite;
+}
+
+@keyframes videoTextAnimationHover {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+@keyframes videoTextAnimationNotHover {
+  from {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
   }
 }
 

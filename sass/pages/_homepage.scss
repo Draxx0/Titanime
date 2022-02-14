@@ -1,0 +1,180 @@
+.homepage_body {
+  background-color: $body-bg-color;
+}
+
+.homepage_nav {
+  width: 100%;
+  height: 112px;
+  background-color: $nav-bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .homepage_logo {
+    @include logoStyle;
+    padding-left: 57px;
+    cursor: pointer;
+  }
+
+  .homepage_account {
+    @include accountPicture;
+    padding-right: 57px;
+  }
+}
+
+.homepage_header {
+  width: 100%;
+  height: 100%;
+
+  .homepage_video_displaying {
+    position: relative;
+
+    .homepage_video {
+      opacity: 60%;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .homepage_video_logo {
+      position: absolute;
+      left: 57px;
+      top: 187px;
+      width: 218px;
+      height: 207px;
+    }
+
+    .homepage_video_text {
+      position: absolute;
+      left: 57px;
+      top: 420px;
+      cursor: pointer;
+      @include titleStyle;
+
+      &:hover {
+        transform: scale(103%);
+        transition: 0.5s;
+        .fa-chevron-right {
+          animation: videoTextAnimationHover 0.5s forwards;
+        }
+      }
+
+      &:not(:hover) {
+        transition: 0.5s;
+        .fa-chevron-right {
+          animation: videoTextAnimationNotHover 0.5s forwards;
+        }
+      }
+    }
+  }
+}
+
+.homepage_main {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 100px;
+
+  .homepage_continue_watching {
+    @include subtitleStyle;
+  }
+
+  .homepage_continue_watching_cards {
+    display: flex;
+    gap: 100px;
+    margin-top: 40px;
+
+    .homepage_continue_watching_first_card {
+      .homepage_continue_watching_first_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/SnkImg.png");
+
+        .homepage_continue_watching_first_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+
+    .homepage_continue_watching_second_card {
+      .homepage_continue_watching_second_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/MhaImg.jpg");
+
+        .homepage_continue_watching_second_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+
+    .homepage_continue_watching_third_card {
+      .homepage_continue_watching_third_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/JjkImg.jpg");
+
+        .homepage_continue_watching_third_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+
+    .homepage_continue_watching_fourth_card {
+      .homepage_continue_watching_fourth_card_img {
+        @include animeCard;
+        background-image: url("../../public/Img/Card/DeathParadeImg.png");
+
+        .homepage_continue_watching_fourth_card_logo {
+          @include cardLogoStyle;
+        }
+      }
+    }
+
+    .homepage_continue_watching_card_title {
+      @include cardTitleStyle;
+    }
+
+    .homepage_continue_watching_card_text {
+      @include cardSubtitleStyle;
+    }
+
+    .progressbar {
+      width: 301px;
+      height: 5px;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(90deg, grey, white, grey, white,);
+      background-size: 300% 100%;
+      border-radius: 20px;
+      margin: auto;
+      margin-top: 20px;
+      animation: progress-animation 2s linear infinite;
+    }
+  }
+}
+
+@keyframes videoTextAnimationHover {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes videoTextAnimationNotHover {
+  from {
+    transform: translateX(10px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
