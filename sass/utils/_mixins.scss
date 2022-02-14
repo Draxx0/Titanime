@@ -95,6 +95,47 @@
   color: $title-color;
 }
 
+@mixin accountNumber {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: $title-color;
+}
+@mixin accountText {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: $subtitle-color-opa--;
+}
+
+@mixin accountSocialMediaBox {
+  width: 84px;
+  height: 84px;
+  background-color: $subtitle-color-opa--;
+  border-radius: 10px;
+
+  &:hover{
+    opacity: 50%;
+    transition: .5s;
+  }
+
+  &:not(:hover){
+    transition: .5s;
+  }
+}
+
+@mixin accountSocialMediaIcon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 //! TEXTS /////////////////////////////////////////
 
 @mixin conditionsText {

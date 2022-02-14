@@ -4,7 +4,203 @@
 
 
 .account_header{
+    position: relative;
     width: 100%;
-    height: 470px;
-    background-image: url('../../public/Img/Card/Hxh/HXH-bg.jpg');
+    height: 550px;
+    background-image: url('../../public/Img/Account/DemonSlayerBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: lighten;
+
+    .account_logo{
+        position: absolute;
+        left: 870px;
+        top: 147px;
+        width: 180px;
+        height: 180px;
+        border-radius: 20px;
+    }
+
+    .account_username{
+        position: absolute;
+        left: 810px;
+        top: 357px;
+        @include titleStyle
+    }
+
+    .account_settings{
+        position: absolute;
+        right: 78px;
+        top: 35px;
+        color: white;
+
+        &:hover{
+            transform: rotate(1turn);
+            transition: 1s;
+            color: grey;
+        }
+
+        &:not(:hover){
+            transition: 1s;
+        }
+    }
+
+    .account_log_out{
+        position: absolute;
+        right: 78px;
+        top: 105px;
+        color: white;
+
+        &:hover{
+            transform: translateX(10px);
+            transition: .5s;
+            color: red;
+        }
+
+        &:not(:hover){
+            transition: .5s;
+        }
+    }
+}
+
+.account_main{
+    margin-top: 100px;
+    .account_informations{
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+
+        .account_followers{
+            text-align: center;
+            
+            .account_followers_number{
+                @include accountNumber
+            }
+
+            .account_followers_text{
+                @include accountText
+            }
+        }
+
+        .account_anime_watch{
+            text-align: center;
+            
+            .account_anime_watch_number{
+                @include accountNumber
+            }
+
+            .account_anime_watch_text{
+                @include accountText
+            }
+        }
+
+        .account_following{
+            text-align: center;
+
+            .account_following_number{
+                @include accountNumber
+            }
+
+            .account_following_text{
+                @include accountText
+            }
+        }
+    }
+
+    .account_social_media{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        position: relative;
+
+        .account_instagram_box{
+            @include accountSocialMediaBox;
+
+            .account_instagram_icon{
+                @include accountSocialMediaIcon
+            }
+        }
+        .account_twitter_box{
+            @include accountSocialMediaBox;
+
+            .account_twitter_icon{
+               @include accountSocialMediaIcon
+            }
+        }
+        .account_facebook_box{
+            @include accountSocialMediaBox;
+
+            .account_facebook_icon{
+                @include accountSocialMediaIcon
+            }
+        }
+    }
+
+    .account_favorite_shows_title {
+        width: 80%;
+        margin: auto;
+        margin-top: 58px;
+        @include subtitleStyle;
+      }
+    
+      .account_favorite_shows_cards {
+        display: flex;
+        gap: 100px;
+        margin-top: 40px;
+        justify-content: center;
+    
+        .account_favorite_shows_first_card {
+          .account_favorite_shows_first_card_img {
+            @include animeCard;
+            background-image: url("../../public/Img/Card/DemonSlayer/DemonSlayerBg.jpg");
+    
+            .account_favorite_shows_first_card_logo {
+              @include cardLogoStyle;
+            }
+          }
+        }
+    
+        .account_favorite_shows_second_card {
+          .account_favorite_shows_second_card_img {
+            @include animeCard;
+            background-image: url("../../public/Img/Card/Snk/SnkBg2.jpg");
+    
+            .account_favorite_shows_second_card_logo {
+              @include cardLogoStyle;
+            }
+          }
+        }
+    
+        .account_favorite_shows_third_card {
+          .account_favorite_shows_third_card_img {
+            @include animeCard;
+            background-image: url("../../public/Img/Card/Erased/ErasedBg.jpg");
+    
+            .account_favorite_shows_third_card_logo {
+              @include cardLogoStyle;
+            }
+          }
+        }
+    
+        .account_favorite_shows_fourth_card {
+          .account_favorite_shows_fourth_card_img {
+            @include animeCard;
+            background-image: url("../../public/Img/Card/Beastars/BeastarsBg.jpg");
+    
+            .account_favorite_shows_fourth_card_logo {
+              @include cardLogoStyle;
+            }
+          }
+        }
+    
+        .account_favorite_shows_card_title {
+          @include cardTitleStyle;
+        }
+    
+        .account_favorite_shows_card_text {
+          @include cardSubtitleStyle;
+        }
+      }
+    
 }
