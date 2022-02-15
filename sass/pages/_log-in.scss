@@ -1,0 +1,78 @@
+.log_in_card_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 87px;
+  margin-bottom: 43px;
+  @include titleStyle;
+}
+
+.log_in_card_labels_inputs_displaying {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  align-items: center;
+  margin-top: 120px;
+
+  .sign_in_card_username_displaying {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    .sign_in_card_username_label {
+      @include signInLogInLabel;
+    }
+
+    .sign_in_card_username_input {
+      @include signInLogInInput;
+      animation: inputAnim 1s;
+      width: 356px;
+    }
+  }
+
+  .sign_in_card_email_displaying {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+    .sign_in_card_email_label {
+      @include signInLogInLabel;
+    }
+
+    .sign_in_card_email_input {
+      @include signInLogInInput;
+      animation: inputAnim 1s;
+      width: 356px;
+    }
+  }
+
+  .sign_in_card_password_displaying {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+    .sign_in_card_password_label {
+      @include signInLogInLabel;
+    }
+
+    .sign_in_card_password_input {
+      @include signInLogInInput;
+      animation: inputAnim 1s;
+      width: 356px;
+    }
+  }
+
+  .sign_in_card_submit_button_displaying {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+    .sign_in_card_submit_button {
+      margin-top: 50px;
+      @include signInBtn;
+    }
+  }
+}
