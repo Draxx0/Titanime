@@ -40,3 +40,27 @@
   font-size: 25px;
   line-height: 37px;
 }
+
+@mixin previousNextBtn {
+  width: 301px;
+  height: 75px;
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: white;
+  background-color: transparent;
+  border: solid 1px $title-color;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $title-color;
+    color: $body-bg-color;
+    transition: 0.5s;
+  }
+  &:not(:hover) {
+    transition: 0.5s;
+  }
+}

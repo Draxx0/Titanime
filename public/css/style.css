@@ -2049,4 +2049,96 @@ a {
   text-align: center;
 }
 
+.anime_watching_body {
+  background-color: #1f1f1f;
+}
+
+.anime_watching_main {
+  width: 80%;
+  margin: auto;
+}
+.anime_watching_main .anime_watching_informations {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.anime_watching_main .anime_watching_informations .anime_watching_title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+}
+.anime_watching_main .anime_watching_informations .anime_watching_text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.anime_watching_main .anime_watching_video {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  border-radius: 25px;
+}
+.anime_watching_main .anime_watching_video:fullscreen {
+  border-radius: 0px;
+}
+.anime_watching_main .anime_watching_previous_next_btn {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+.anime_watching_main .anime_watching_previous_next_btn .anime_watching_previous_episode {
+  width: 301px;
+  height: 75px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: white;
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.anime_watching_main .anime_watching_previous_next_btn .anime_watching_previous_episode:hover {
+  background-color: #ffffff;
+  color: #1f1f1f;
+  transition: 0.5s;
+}
+.anime_watching_main .anime_watching_previous_next_btn .anime_watching_previous_episode:not(:hover) {
+  transition: 0.5s;
+}
+.anime_watching_main .anime_watching_previous_next_btn .anime_watching_next_episode {
+  width: 301px;
+  height: 75px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: white;
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.anime_watching_main .anime_watching_previous_next_btn .anime_watching_next_episode:hover {
+  background-color: #ffffff;
+  color: #1f1f1f;
+  transition: 0.5s;
+}
+.anime_watching_main .anime_watching_previous_next_btn .anime_watching_next_episode:not(:hover) {
+  transition: 0.5s;
+}
+
 /*# sourceMappingURL=style.css.map */

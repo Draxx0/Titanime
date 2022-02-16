@@ -1,0 +1,50 @@
+.anime_watching_body{
+    background-color: $body-bg-color;
+}
+
+.anime_watching_main{
+    width: 80%;
+    margin: auto;
+
+    .anime_watching_informations{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .anime_watching_title{
+            @include titleStyle;
+        }
+
+        .anime_watching_text{
+            @include subtitleStyle;
+        }
+
+    }
+    .anime_watching_video{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        border-radius: 25px;
+
+        &:fullscreen{
+            border-radius: 0px;
+        }
+    }
+
+    .anime_watching_previous_next_btn{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 100px;
+
+        .anime_watching_previous_episode{
+            @include previousNextBtn
+        }
+
+        .anime_watching_next_episode{
+            @include previousNextBtn
+        }
+    }
+}
