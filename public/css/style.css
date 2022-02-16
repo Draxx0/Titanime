@@ -1154,7 +1154,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
-  background-image: url("../../public/Img/Card/DemonSlayer/DemonSlayerBg.jpg");
+  background-image: url("../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_first_card .account_favorite_shows_first_card_img:hover {
   opacity: 50%;
@@ -2088,7 +2088,8 @@ a {
   display: flex;
   align-items: center;
   margin: auto;
-  width: 100%;
+  width: 80%;
+  height: 700px;
   border-radius: 25px;
 }
 .anime_watching_main .anime_watching_video:fullscreen {
