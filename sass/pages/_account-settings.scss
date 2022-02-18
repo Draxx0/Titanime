@@ -1,0 +1,140 @@
+.account_settings_icon {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(-5px);
+    transition: 1s;
+  }
+
+  &:not(:hover) {
+    transition: 1s;
+  }
+}
+
+.account_logo_displaying {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .account_logo_settings_icon {
+    position: absolute;
+    top: 52%;
+    right: 46%;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      transform: translate(-5px);
+      transition: 1s;
+    }
+
+    &:not(:hover) {
+      transition: 1s;
+    }
+  }
+}
+
+.account_settings_main {
+    margin-top: 150px;
+  .account_settings_informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .account_settings_username {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    .account_settings_username_title{
+        @include subtitleStyle
+    }
+    .account_settings_username_input{
+        @include accountSettingsInput
+    }
+
+    .account_logo_settings_icon {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        color: white;
+        cursor: pointer;
+    
+        &:hover {
+          transform: translate(-5px);
+          transition: 1s;
+        }
+    
+        &:not(:hover) {
+          transition: 1s;
+        }
+      }
+  }
+  .account_settings_email {
+    display: flex;
+    gap: 20px;
+    position: relative;
+
+    .account_settings_email_title{
+        @include subtitleStyle 
+    }
+    .account_settings_email_input{
+        @include accountSettingsInput
+    }
+
+    .account_logo_settings_icon {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        color: white;
+        cursor: pointer;
+    
+        &:hover {
+          transform: translate(-5px);
+          transition: 1s;
+        }
+    
+        &:not(:hover) {
+          transition: 1s;
+        }
+      }
+  }
+  .account_settings_password {
+    display: flex;
+    gap: 20px;
+    position: relative;
+
+    .account_settings_password_title{
+        @include subtitleStyle
+    }
+    .account_settings_password_input{
+        @include accountSettingsInput
+    }
+
+    .account_logo_settings_icon {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        color: white;
+        cursor: pointer;
+    
+        &:hover {
+          transform: translate(-5px);
+          transition: 1s;
+        }
+    
+        &:not(:hover) {
+          transition: 1s;
+        }
+      }
+  }
+
+  .account_settings_button{
+      @include signInBtn
+  }
+}

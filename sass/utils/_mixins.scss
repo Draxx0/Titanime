@@ -118,13 +118,13 @@
   background-color: $subtitle-color-opa--;
   border-radius: 10px;
 
-  &:hover{
+  &:hover {
     opacity: 50%;
-    transition: .5s;
+    transition: 0.5s;
   }
 
-  &:not(:hover){
-    transition: .5s;
+  &:not(:hover) {
+    transition: 0.5s;
   }
 }
 
@@ -186,6 +186,29 @@
     font-size: $input-font-size;
     border-bottom: 1px solid red;
     transition: 1s;
+  }
+}
+
+@mixin accountSettingsInput {
+  width: 499px;
+  height: 61px;
+  background: #c4c4c4;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0px 10px;
+  color: white;
+  font-family: $poppins;
+  font-size: $input-font-size;
+
+  &:focus {
+    color: white;
+    font-family: $poppins;
+    font-size: $input-font-size;
+  }
+
+  [attr="Value"] {
+    color: white;
   }
 }
 
