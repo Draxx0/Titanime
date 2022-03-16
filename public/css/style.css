@@ -294,6 +294,10 @@ a {
   font-size: 25px;
   line-height: 37px;
   color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items:hover {
+  transform: scale(120%);
 }
 .footer .footer_container .footer_content_displaying .third_column {
   width: 20%;
@@ -303,6 +307,12 @@ a {
   gap: 20px;
   justify-content: center;
   align-items: flex-end;
+}
+.footer .footer_container .footer_content_displaying .third_column .footer_icon {
+  transition: 0.3s ease-in-out;
+}
+.footer .footer_container .footer_content_displaying .third_column .footer_icon:hover {
+  transform: scale(120%);
 }
 
 @keyframes inputAnim {

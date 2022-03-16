@@ -118,13 +118,13 @@
   background-color: $subtitle-color-opa--;
   border-radius: 10px;
 
-  &:hover{
+  &:hover {
     opacity: 50%;
-    transition: .5s;
+    transition: 0.5s;
   }
 
-  &:not(:hover){
-    transition: .5s;
+  &:not(:hover) {
+    transition: 0.5s;
   }
 }
 
@@ -206,6 +206,19 @@
   font-size: 25px;
   line-height: 37px;
   color: $title-color;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(120%);
+  }
+}
+
+@mixin footerIconStyle {
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(120%);
+  }
 }
 
 //! ACCOUNT PICTURES /////////////////////////////////////////
