@@ -189,6 +189,29 @@
   }
 }
 
+@mixin accountSettingsInput {
+  width: 499px;
+  height: 61px;
+  background: #c4c4c4;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0px 10px;
+  color: white;
+  font-family: $poppins;
+  font-size: $input-font-size;
+
+  &:focus {
+    color: white;
+    font-family: $poppins;
+    font-size: $input-font-size;
+  }
+
+  [attr="Value"] {
+    color: white;
+  }
+}
+
 //! FOOTER /////////////////////////////////////////
 
 @mixin footerStyle {

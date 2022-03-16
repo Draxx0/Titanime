@@ -325,6 +325,186 @@ a {
     opacity: 1;
   }
 }
+.log_in_card_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 87px;
+  margin-bottom: 43px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.log_in_card_labels_inputs_displaying {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  align-items: center;
+  margin-top: 120px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: #DADADA;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_input {
+  border: solid 1px #DADADA;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #1f1f1f;
+  animation: inputAnim 1s;
+  width: 356px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_input:focus {
+  outline: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_input:valid {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid green;
+  transition: 1s;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_input:invalid {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid red;
+  transition: 1s;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: #DADADA;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_input {
+  border: solid 1px #DADADA;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #1f1f1f;
+  animation: inputAnim 1s;
+  width: 356px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_input:focus {
+  outline: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_input:valid {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid green;
+  transition: 1s;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_input:invalid {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid red;
+  transition: 1s;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  color: #DADADA;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_input {
+  border: solid 1px #DADADA;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #1f1f1f;
+  animation: inputAnim 1s;
+  width: 356px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_input:focus {
+  outline: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_input:valid {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid green;
+  transition: 1s;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_input:invalid {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid red;
+  transition: 1s;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying .sign_in_card_submit_button {
+  margin-top: 50px;
+  width: 260px;
+  height: 59px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: solid 2px #DADADA;
+  border-radius: 40px;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 37px;
+  cursor: pointer;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying .sign_in_card_submit_button:hover {
+  background-color: #DADADA;
+  color: #1f1f1f;
+  transition: 0.5s;
+}
+.log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying .sign_in_card_submit_button:not(:hover) {
+  transition: 0.5s;
+}
+
 .homepage_body {
   background-color: #1f1f1f;
 }
@@ -1277,163 +1457,192 @@ a {
   text-align: center;
 }
 
-.log_in_card_title {
-  display: flex;
-  justify-content: center;
-  margin-top: 87px;
-  margin-bottom: 43px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
-  color: #ffffff;
+.account_settings_icon {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.account_settings_icon:hover {
+  transform: translate(-5px);
+  transition: 1s;
+}
+.account_settings_icon:not(:hover) {
+  transition: 1s;
 }
 
-.log_in_card_labels_inputs_displaying {
+.account_logo_displaying {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.account_logo_displaying .account_logo_settings_icon {
+  position: absolute;
+  top: 52%;
+  right: 46%;
+  color: white;
+  cursor: pointer;
+}
+.account_logo_displaying .account_logo_settings_icon:hover {
+  transform: translate(-5px);
+  transition: 1s;
+}
+.account_logo_displaying .account_logo_settings_icon:not(:hover) {
+  transition: 1s;
+}
+
+.account_settings_main {
+  margin-top: 150px;
+}
+.account_settings_main .account_settings_informations {
   display: flex;
   flex-direction: column;
-  gap: 55px;
   align-items: center;
-  margin-top: 120px;
+  gap: 50px;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying {
+.account_settings_main .account_settings_username {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  position: relative;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_label {
-  font-family: Poppins;
+.account_settings_main .account_settings_username .account_settings_username_title {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 37px;
-  color: #DADADA;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_input {
-  border: solid 1px #DADADA;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background-color: #1f1f1f;
-  animation: inputAnim 1s;
-  width: 356px;
-}
-.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_input:focus {
+.account_settings_main .account_settings_username .account_settings_username_input {
+  width: 499px;
+  height: 61px;
+  background: #c4c4c4;
+  border-radius: 5px;
   outline: none;
-  color: #ffffff;
+  border: none;
+  padding: 0px 10px;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_input:valid {
-  color: #ffffff;
+.account_settings_main .account_settings_username .account_settings_username_input:focus {
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  border-bottom: 1px solid green;
+}
+.account_settings_main .account_settings_username .account_settings_username_input [attr=Value] {
+  color: white;
+}
+.account_settings_main .account_settings_username .account_logo_settings_icon {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+.account_settings_main .account_settings_username .account_logo_settings_icon:hover {
+  transform: translate(-5px);
   transition: 1s;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_username_displaying .sign_in_card_username_input:invalid {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  border-bottom: 1px solid red;
+.account_settings_main .account_settings_username .account_logo_settings_icon:not(:hover) {
   transition: 1s;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying {
+.account_settings_main .account_settings_email {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
+  gap: 20px;
+  position: relative;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_label {
-  font-family: Poppins;
+.account_settings_main .account_settings_email .account_settings_email_title {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 37px;
-  color: #DADADA;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_input {
-  border: solid 1px #DADADA;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background-color: #1f1f1f;
-  animation: inputAnim 1s;
-  width: 356px;
-}
-.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_input:focus {
+.account_settings_main .account_settings_email .account_settings_email_input {
+  width: 499px;
+  height: 61px;
+  background: #c4c4c4;
+  border-radius: 5px;
   outline: none;
-  color: #ffffff;
+  border: none;
+  padding: 0px 10px;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_input:valid {
-  color: #ffffff;
+.account_settings_main .account_settings_email .account_settings_email_input:focus {
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  border-bottom: 1px solid green;
+}
+.account_settings_main .account_settings_email .account_settings_email_input [attr=Value] {
+  color: white;
+}
+.account_settings_main .account_settings_email .account_logo_settings_icon {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+.account_settings_main .account_settings_email .account_logo_settings_icon:hover {
+  transform: translate(-5px);
   transition: 1s;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_email_displaying .sign_in_card_email_input:invalid {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  border-bottom: 1px solid red;
+.account_settings_main .account_settings_email .account_logo_settings_icon:not(:hover) {
   transition: 1s;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying {
+.account_settings_main .account_settings_password {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
+  gap: 20px;
+  position: relative;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_label {
-  font-family: Poppins;
+.account_settings_main .account_settings_password .account_settings_password_title {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 37px;
-  color: #DADADA;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_input {
-  border: solid 1px #DADADA;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background-color: #1f1f1f;
-  animation: inputAnim 1s;
-  width: 356px;
-}
-.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_input:focus {
+.account_settings_main .account_settings_password .account_settings_password_input {
+  width: 499px;
+  height: 61px;
+  background: #c4c4c4;
+  border-radius: 5px;
   outline: none;
-  color: #ffffff;
+  border: none;
+  padding: 0px 10px;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_input:valid {
-  color: #ffffff;
+.account_settings_main .account_settings_password .account_settings_password_input:focus {
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  border-bottom: 1px solid green;
+}
+.account_settings_main .account_settings_password .account_settings_password_input [attr=Value] {
+  color: white;
+}
+.account_settings_main .account_settings_password .account_logo_settings_icon {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+.account_settings_main .account_settings_password .account_logo_settings_icon:hover {
+  transform: translate(-5px);
   transition: 1s;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_password_displaying .sign_in_card_password_input:invalid {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  border-bottom: 1px solid red;
+.account_settings_main .account_settings_password .account_logo_settings_icon:not(:hover) {
   transition: 1s;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-}
-.log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying .sign_in_card_submit_button {
-  margin-top: 50px;
+.account_settings_main .account_settings_button {
   width: 260px;
   height: 59px;
   background-color: #1f1f1f;
@@ -1448,12 +1657,12 @@ a {
   line-height: 37px;
   cursor: pointer;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying .sign_in_card_submit_button:hover {
+.account_settings_main .account_settings_button:hover {
   background-color: #DADADA;
   color: #1f1f1f;
   transition: 0.5s;
 }
-.log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying .sign_in_card_submit_button:not(:hover) {
+.account_settings_main .account_settings_button:not(:hover) {
   transition: 0.5s;
 }
 
