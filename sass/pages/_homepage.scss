@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-between;
   font-family: $poppins;
+  z-index: 3;
 
   .homepage_logo {
     @include logoStyle;
