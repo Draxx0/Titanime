@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -10,4 +10,12 @@ html{
 a {
   text-decoration: none;
   color: $title-color;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: $subtitle-color;
 }

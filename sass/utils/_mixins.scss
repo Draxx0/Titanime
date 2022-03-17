@@ -23,15 +23,24 @@
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
 
   &:hover {
     opacity: 50%;
     transform: scale(105%);
     transition: 0.5s;
+
+    .homepage_continue_watching_play_btn {
+      animation: fromBottom 0.3s forwards;
+    }
   }
 
   &:not(:hover) {
     transition: 0.5s;
+
+    .homepage_continue_watching_play_btn {
+      animation: toBottom 0.3s forwards;
+    }
   }
 }
 
@@ -42,6 +51,7 @@
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 
 @mixin cardTitleStyle {
@@ -73,6 +83,11 @@
   font-size: 50px;
   line-height: 61px;
   color: $title-color;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 //! TITLES /////////////////////////////////////////
@@ -209,6 +224,29 @@
 
   [attr="Value"] {
     color: white;
+  }
+}
+
+//! BUTTON /////////////////////////////////////////
+
+@mixin watchingTrailerBtn {
+  position: absolute;
+  top: 415px;
+  left: 350px;
+  border: 3px solid #c4c4c4;
+  background-color: transparent;
+  padding: 20px 20px;
+  color: $title-color;
+  font-family: $poppins;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease-in-out;
+
+  &:hover{
+    transform: scale(1.05);
   }
 }
 

@@ -9,11 +9,47 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: $poppins;
 
   .homepage_logo {
     @include logoStyle;
     padding-left: 57px;
     cursor: pointer;
+  }
+
+  .homepage_list {
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    cursor: pointer;
+
+    .homepage_list_item {
+      position: relative;
+      font-size: 30px;
+      transition: 0.25s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $subtitle-color;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+
+      &:hover::after {
+        transform: scale(1);
+        transform-origin: bottom left;
+      }
+    }
   }
 
   .homepage_account {
@@ -93,6 +129,16 @@
         .homepage_continue_watching_first_card_logo {
           @include cardLogoStyle;
         }
+
+        .homepage_continue_watching_play_btn {
+          position: absolute;
+          left: 30%;
+          top: 20%;
+          width: 40%;
+          z-index: 2;
+          opacity: 0;
+          transition: 0.3s ease-in-out;
+        }
       }
     }
 
@@ -103,6 +149,16 @@
 
         .homepage_continue_watching_second_card_logo {
           @include cardLogoStyle;
+        }
+
+        .homepage_continue_watching_play_btn {
+          position: absolute;
+          left: 30%;
+          top: 20%;
+          width: 40%;
+          z-index: 2;
+          opacity: 0;
+          transition: 0.3s ease-in-out;
         }
       }
     }
@@ -115,6 +171,16 @@
         .homepage_continue_watching_third_card_logo {
           @include cardLogoStyle;
         }
+
+        .homepage_continue_watching_play_btn {
+          position: absolute;
+          left: 30%;
+          top: 20%;
+          width: 40%;
+          z-index: 2;
+          opacity: 0;
+          transition: 0.3s ease-in-out;
+        }
       }
     }
 
@@ -125,6 +191,16 @@
 
         .homepage_continue_watching_fourth_card_logo {
           @include cardLogoStyle;
+        }
+
+        .homepage_continue_watching_play_btn {
+          position: absolute;
+          left: 30%;
+          top: 20%;
+          width: 40%;
+          z-index: 2;
+          opacity: 0;
+          transition: 0.3s ease-in-out;
         }
       }
     }
@@ -359,5 +435,29 @@
   }
   100% {
     background-position: 0;
+  }
+}
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toBottom {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
   }
 }

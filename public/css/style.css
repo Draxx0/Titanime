@@ -16,6 +16,14 @@ a {
   color: #ffffff;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  color: #DADADA;
+}
+
 .sign_in_body {
   background-image: url("../../public/Img/Card/DragonBallZ/DbzBg.jpg");
   background-repeat: no-repeat;
@@ -37,6 +45,10 @@ a {
   font-size: 50px;
   line-height: 61px;
   color: #ffffff;
+  transition: 0.25s ease-in-out;
+}
+.sign_in_nav .sign_in_logo:hover {
+  transform: scale(1.05);
 }
 
 .sign_in_main {
@@ -516,6 +528,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Poppins", sans-serif;
 }
 .homepage_nav .homepage_logo {
   font-family: "Montserrat Alternates", sans-serif;
@@ -524,8 +537,42 @@ a {
   font-size: 50px;
   line-height: 61px;
   color: #ffffff;
+  transition: 0.25s ease-in-out;
   padding-left: 57px;
   cursor: pointer;
+}
+.homepage_nav .homepage_logo:hover {
+  transform: scale(1.05);
+}
+.homepage_nav .homepage_list {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  cursor: pointer;
+}
+.homepage_nav .homepage_list .homepage_list_item {
+  position: relative;
+  font-size: 30px;
+  transition: 0.25s ease-in-out;
+}
+.homepage_nav .homepage_list .homepage_list_item:hover {
+  transform: scale(1.05);
+}
+.homepage_nav .homepage_list .homepage_list_item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #DADADA;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.homepage_nav .homepage_list .homepage_list_item:hover::after {
+  transform: scale(1);
+  transform-origin: bottom left;
 }
 .homepage_nav .homepage_account {
   width: 90px;
@@ -614,6 +661,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Snk/SnkImg.png");
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img:hover {
@@ -621,8 +669,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img .homepage_continue_watching_first_card_logo {
   position: absolute;
@@ -631,6 +685,16 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_first_card .homepage_continue_watching_first_card_img .homepage_continue_watching_play_btn {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 40%;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img {
   position: relative;
@@ -639,6 +703,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Mha/MhaImg.jpg");
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img:hover {
@@ -646,8 +711,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img .homepage_continue_watching_second_card_logo {
   position: absolute;
@@ -656,6 +727,16 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_second_card .homepage_continue_watching_second_card_img .homepage_continue_watching_play_btn {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 40%;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img {
   position: relative;
@@ -664,6 +745,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Jjk/JjkImg.jpg");
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img:hover {
@@ -671,8 +753,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img .homepage_continue_watching_third_card_logo {
   position: absolute;
@@ -681,6 +769,16 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_third_card .homepage_continue_watching_third_card_img .homepage_continue_watching_play_btn {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 40%;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img {
   position: relative;
@@ -689,6 +787,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/DeathParade/DeathParadeImg.png");
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img:hover {
@@ -696,8 +795,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img .homepage_continue_watching_fourth_card_logo {
   position: absolute;
@@ -706,6 +811,16 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
+}
+.homepage_main .homepage_continue_watching_cards .homepage_continue_watching_fourth_card .homepage_continue_watching_fourth_card_img .homepage_continue_watching_play_btn {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 40%;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_card_title {
   font-family: "Poppins", sans-serif;
@@ -759,6 +874,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/OnePiece/OnePieceImg.jpg");
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img:hover {
@@ -766,8 +882,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_first_card .homepage_upcoming_first_card_img .homepage_upcoming_first_card_logo {
   position: absolute;
@@ -776,6 +898,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img {
   position: relative;
@@ -784,6 +907,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/FairyTail/FairyTailImg.jpeg");
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img:hover {
@@ -791,8 +915,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_second_card .homepage_upcoming_second_card_img .homepage_upcoming_second_card_logo {
   position: absolute;
@@ -801,6 +931,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img {
   position: relative;
@@ -809,6 +940,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/NarutoShippuden/NarutoImg.jpg");
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img:hover {
@@ -816,8 +948,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_third_card .homepage_upcoming_third_card_img .homepage_upcoming_third_card_logo {
   position: absolute;
@@ -826,6 +964,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img {
   position: relative;
@@ -834,6 +973,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Hxh/HXH-bg.jpg");
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img:hover {
@@ -841,8 +981,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_fourth_card .homepage_upcoming_fourth_card_img .homepage_upcoming_fourth_card_logo {
   position: absolute;
@@ -851,6 +997,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_upcoming_cards .homepage_upcoming_card_title {
   font-family: "Poppins", sans-serif;
@@ -895,6 +1042,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Snk/SnkBg2.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img:hover {
@@ -902,8 +1050,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_first_card .homepage_top_anime_week_first_card_img .homepage_top_anime_week_first_card_logo {
   position: absolute;
@@ -912,6 +1066,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img {
   position: relative;
@@ -920,6 +1075,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Mha/MhaBg.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img:hover {
@@ -927,8 +1083,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_second_card .homepage_top_anime_week_second_card_img .homepage_top_anime_week_second_card_logo {
   position: absolute;
@@ -937,6 +1099,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img {
   position: relative;
@@ -945,6 +1108,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/DemonSlayer/DemonSlayerBg.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img:hover {
@@ -952,8 +1116,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_third_card .homepage_top_anime_week_third_card_img .homepage_top_anime_week_third_card_logo {
   position: absolute;
@@ -970,6 +1140,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Jjk/JjkBg2.png");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img:hover {
@@ -977,8 +1148,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_first_line .homepage_top_anime_week_fourth_card .homepage_top_anime_week_fourth_card_img .homepage_top_anime_week_fourth_card_logo {
   position: absolute;
@@ -987,6 +1164,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line {
   display: flex;
@@ -999,6 +1177,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/TokyoRevengers/tokyoRevengersBg.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img:hover {
@@ -1006,8 +1185,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_fifht_card .homepage_top_anime_week_fifht_card_img .homepage_top_anime_week_fifht_card_logo {
   position: absolute;
@@ -1016,6 +1201,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img {
   position: relative;
@@ -1024,6 +1210,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/VinlandSaga/VinlandSagaBg.png");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img:hover {
@@ -1031,8 +1218,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_sixth_card .homepage_top_anime_week_sixth_card_img .homepage_top_anime_week_sixth_card_logo {
   position: absolute;
@@ -1041,6 +1234,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img {
   position: relative;
@@ -1049,6 +1243,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Erased/ErasedBg.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img:hover {
@@ -1056,8 +1251,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_seventh_card .homepage_top_anime_week_seventh_card_img .homepage_top_anime_week_seventh_card_logo {
   position: absolute;
@@ -1066,6 +1267,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img {
   position: relative;
@@ -1074,6 +1276,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/DragonBallZ/DragonBallZBg2.jpg");
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img:hover {
@@ -1081,8 +1284,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_second_line .homepage_top_anime_week_eighth_card .homepage_top_anime_week_eighth_card_img .homepage_top_anime_week_eighth_card_logo {
   position: absolute;
@@ -1091,6 +1300,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .homepage_main .homepage_top_anime_week_cards .homepage_top_anime_week_card_title {
   font-family: "Poppins", sans-serif;
@@ -1125,6 +1335,26 @@ a {
   }
   100% {
     background-position: 0;
+  }
+}
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes toBottom {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
   }
 }
 .account_body {
@@ -1344,6 +1574,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_first_card .account_favorite_shows_first_card_img:hover {
@@ -1351,8 +1582,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.account_main .account_favorite_shows_cards .account_favorite_shows_first_card .account_favorite_shows_first_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .account_main .account_favorite_shows_cards .account_favorite_shows_first_card .account_favorite_shows_first_card_img:not(:hover) {
   transition: 0.5s;
+}
+.account_main .account_favorite_shows_cards .account_favorite_shows_first_card .account_favorite_shows_first_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_first_card .account_favorite_shows_first_card_img .account_favorite_shows_first_card_logo {
   position: absolute;
@@ -1361,6 +1598,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_second_card .account_favorite_shows_second_card_img {
   position: relative;
@@ -1369,6 +1607,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Snk/SnkBg2.jpg");
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_second_card .account_favorite_shows_second_card_img:hover {
@@ -1376,8 +1615,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.account_main .account_favorite_shows_cards .account_favorite_shows_second_card .account_favorite_shows_second_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .account_main .account_favorite_shows_cards .account_favorite_shows_second_card .account_favorite_shows_second_card_img:not(:hover) {
   transition: 0.5s;
+}
+.account_main .account_favorite_shows_cards .account_favorite_shows_second_card .account_favorite_shows_second_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_second_card .account_favorite_shows_second_card_img .account_favorite_shows_second_card_logo {
   position: absolute;
@@ -1386,6 +1631,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_third_card .account_favorite_shows_third_card_img {
   position: relative;
@@ -1394,6 +1640,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Erased/ErasedBg.jpg");
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_third_card .account_favorite_shows_third_card_img:hover {
@@ -1401,8 +1648,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.account_main .account_favorite_shows_cards .account_favorite_shows_third_card .account_favorite_shows_third_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .account_main .account_favorite_shows_cards .account_favorite_shows_third_card .account_favorite_shows_third_card_img:not(:hover) {
   transition: 0.5s;
+}
+.account_main .account_favorite_shows_cards .account_favorite_shows_third_card .account_favorite_shows_third_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_third_card .account_favorite_shows_third_card_img .account_favorite_shows_third_card_logo {
   position: absolute;
@@ -1411,6 +1664,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_fourth_card .account_favorite_shows_fourth_card_img {
   position: relative;
@@ -1419,6 +1673,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../public/Img/Card/Beastars/BeastarsBg.jpg");
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_fourth_card .account_favorite_shows_fourth_card_img:hover {
@@ -1426,8 +1681,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.account_main .account_favorite_shows_cards .account_favorite_shows_fourth_card .account_favorite_shows_fourth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .account_main .account_favorite_shows_cards .account_favorite_shows_fourth_card .account_favorite_shows_fourth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.account_main .account_favorite_shows_cards .account_favorite_shows_fourth_card .account_favorite_shows_fourth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_fourth_card .account_favorite_shows_fourth_card_img .account_favorite_shows_fourth_card_logo {
   position: absolute;
@@ -1436,6 +1697,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .account_main .account_favorite_shows_cards .account_favorite_shows_card_title {
   font-family: "Poppins", sans-serif;
@@ -1726,6 +1988,25 @@ a {
   line-height: 45px;
   color: #ffffff;
 }
+.anime_page_header .anime_page_video_displaying .top_amv_btn {
+  position: absolute;
+  top: 415px;
+  left: 350px;
+  border: 3px solid #c4c4c4;
+  background-color: transparent;
+  padding: 20px 20px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s ease-in-out;
+}
+.anime_page_header .anime_page_video_displaying .top_amv_btn:hover {
+  transform: scale(1.05);
+}
 
 .anime_page_main {
   width: 80%;
@@ -1780,6 +2061,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_first_card .anime_page_first_card_img:hover {
@@ -1787,8 +2069,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_first_line .anime_page_first_card .anime_page_first_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_first_card .anime_page_first_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_first_line .anime_page_first_card .anime_page_first_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_second_card .anime_page_second_card_img {
   position: relative;
@@ -1797,6 +2085,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_second_card .anime_page_second_card_img:hover {
@@ -1804,8 +2093,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_first_line .anime_page_second_card .anime_page_second_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_second_card .anime_page_second_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_first_line .anime_page_second_card .anime_page_second_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_second_card .anime_page_second_card_img .anime_page_second_card_logo {
   position: absolute;
@@ -1814,6 +2109,7 @@ a {
   left: 207px;
   top: 120px;
   left: 10%;
+  z-index: 3;
 }
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_third_card .anime_page_third_card_img {
   position: relative;
@@ -1822,6 +2118,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_third_card .anime_page_third_card_img:hover {
@@ -1829,8 +2126,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_first_line .anime_page_third_card .anime_page_third_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_third_card .anime_page_third_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_first_line .anime_page_third_card .anime_page_third_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_fourth_card .anime_page_fourth_card_img {
   position: relative;
@@ -1839,6 +2142,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_fourth_card .anime_page_fourth_card_img:hover {
@@ -1846,8 +2150,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_first_line .anime_page_fourth_card .anime_page_fourth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_first_line .anime_page_fourth_card .anime_page_fourth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_first_line .anime_page_fourth_card .anime_page_fourth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_second_line {
   display: flex;
@@ -1861,6 +2171,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_fifht_card .anime_page_fifht_card_img:hover {
@@ -1868,8 +2179,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_second_line .anime_page_fifht_card .anime_page_fifht_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_fifht_card .anime_page_fifht_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_second_line .anime_page_fifht_card .anime_page_fifht_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_sixth_card .anime_page_sixth_card_img {
   position: relative;
@@ -1878,6 +2195,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_sixth_card .anime_page_sixth_card_img:hover {
@@ -1885,8 +2203,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_second_line .anime_page_sixth_card .anime_page_sixth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_sixth_card .anime_page_sixth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_second_line .anime_page_sixth_card .anime_page_sixth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_seventh_card .anime_page_seventh_card_img {
   position: relative;
@@ -1895,6 +2219,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_seventh_card .anime_page_seventh_card_img:hover {
@@ -1902,8 +2227,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_second_line .anime_page_seventh_card .anime_page_seventh_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_seventh_card .anime_page_seventh_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_second_line .anime_page_seventh_card .anime_page_seventh_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_eighth_card .anime_page_eighth_card_img {
   position: relative;
@@ -1912,6 +2243,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_eighth_card .anime_page_eighth_card_img:hover {
@@ -1919,8 +2251,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_second_line .anime_page_eighth_card .anime_page_eighth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_second_line .anime_page_eighth_card .anime_page_eighth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_second_line .anime_page_eighth_card .anime_page_eighth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_third_line {
   display: flex;
@@ -1934,6 +2272,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_ninth_card .anime_page_ninth_card_img:hover {
@@ -1941,8 +2280,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_third_line .anime_page_ninth_card .anime_page_ninth_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_ninth_card .anime_page_ninth_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_third_line .anime_page_ninth_card .anime_page_ninth_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_10th_card .anime_page_10th_card_img {
   position: relative;
@@ -1951,6 +2296,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_10th_card .anime_page_10th_card_img:hover {
@@ -1958,8 +2304,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_third_line .anime_page_10th_card .anime_page_10th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_10th_card .anime_page_10th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_third_line .anime_page_10th_card .anime_page_10th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_11th_card .anime_page_11th_card_img {
   position: relative;
@@ -1968,6 +2320,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_11th_card .anime_page_11th_card_img:hover {
@@ -1975,8 +2328,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_third_line .anime_page_11th_card .anime_page_11th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_11th_card .anime_page_11th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_third_line .anime_page_11th_card .anime_page_11th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_12th_card .anime_page_12th_card_img {
   position: relative;
@@ -1985,6 +2344,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_12th_card .anime_page_12th_card_img:hover {
@@ -1992,8 +2352,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_third_line .anime_page_12th_card .anime_page_12th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_third_line .anime_page_12th_card .anime_page_12th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_third_line .anime_page_12th_card .anime_page_12th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_fourth_line {
   display: flex;
@@ -2007,6 +2373,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_13th_card .anime_page_13th_card_img:hover {
@@ -2014,8 +2381,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_13th_card .anime_page_13th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_13th_card .anime_page_13th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_13th_card .anime_page_13th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_14th_card .anime_page_14th_card_img {
   position: relative;
@@ -2024,6 +2397,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_14th_card .anime_page_14th_card_img:hover {
@@ -2031,8 +2405,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_14th_card .anime_page_14th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_14th_card .anime_page_14th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_14th_card .anime_page_14th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_15th_card .anime_page_15th_card_img {
   position: relative;
@@ -2041,6 +2421,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_15th_card .anime_page_15th_card_img:hover {
@@ -2048,8 +2429,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_15th_card .anime_page_15th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_15th_card .anime_page_15th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_15th_card .anime_page_15th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_16th_card .anime_page_16th_card_img {
   position: relative;
@@ -2058,6 +2445,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_16th_card .anime_page_16th_card_img:hover {
@@ -2065,8 +2453,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_16th_card .anime_page_16th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_16th_card .anime_page_16th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_fourth_line .anime_page_16th_card .anime_page_16th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_fifth_line {
   display: flex;
@@ -2080,6 +2474,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_17th_card .anime_page_17th_card_img:hover {
@@ -2087,8 +2482,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_17th_card .anime_page_17th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_17th_card .anime_page_17th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_17th_card .anime_page_17th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_18th_card .anime_page_18th_card_img {
   position: relative;
@@ -2097,6 +2498,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_18th_card .anime_page_18th_card_img:hover {
@@ -2104,8 +2506,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_18th_card .anime_page_18th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_18th_card .anime_page_18th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_18th_card .anime_page_18th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_19th_card .anime_page_19th_card_img {
   position: relative;
@@ -2114,6 +2522,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_19th_card .anime_page_19th_card_img:hover {
@@ -2121,8 +2530,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_19th_card .anime_page_19th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_19th_card .anime_page_19th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_19th_card .anime_page_19th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_20th_card .anime_page_20th_card_img {
   position: relative;
@@ -2131,6 +2546,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_20th_card .anime_page_20th_card_img:hover {
@@ -2138,8 +2554,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_20th_card .anime_page_20th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_20th_card .anime_page_20th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_fifth_line .anime_page_20th_card .anime_page_20th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_sixth_line {
   display: flex;
@@ -2153,6 +2575,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_21th_card .anime_page_21th_card_img:hover {
@@ -2160,8 +2583,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_21th_card .anime_page_21th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_21th_card .anime_page_21th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_21th_card .anime_page_21th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_22th_card .anime_page_22th_card_img {
   position: relative;
@@ -2170,6 +2599,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_22th_card .anime_page_22th_card_img:hover {
@@ -2177,8 +2607,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_22th_card .anime_page_22th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_22th_card .anime_page_22th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_22th_card .anime_page_22th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_23th_card .anime_page_23th_card_img {
   position: relative;
@@ -2187,6 +2623,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_23th_card .anime_page_23th_card_img:hover {
@@ -2194,8 +2631,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_23th_card .anime_page_23th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_23th_card .anime_page_23th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_23th_card .anime_page_23th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_24th_card .anime_page_24th_card_img {
   position: relative;
@@ -2204,6 +2647,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_24th_card .anime_page_24th_card_img:hover {
@@ -2211,8 +2655,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_24th_card .anime_page_24th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_24th_card .anime_page_24th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_sixth_line .anime_page_24th_card .anime_page_24th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_seventh_line {
   display: flex;
@@ -2225,6 +2675,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_seventh_line .anime_page_25th_card .anime_page_25th_card_img:hover {
@@ -2232,8 +2683,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_seventh_line .anime_page_25th_card .anime_page_25th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_seventh_line .anime_page_25th_card .anime_page_25th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_seventh_line .anime_page_25th_card .anime_page_25th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_seventh_line .anime_page_26th_card .anime_page_26th_card_img {
   position: relative;
@@ -2242,6 +2699,7 @@ a {
   border-radius: 30px;
   background-size: cover;
   cursor: pointer;
+  z-index: 1;
   background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
 }
 .anime_page_main .anime_page_cards .anime_page_seventh_line .anime_page_26th_card .anime_page_26th_card_img:hover {
@@ -2249,8 +2707,14 @@ a {
   transform: scale(105%);
   transition: 0.5s;
 }
+.anime_page_main .anime_page_cards .anime_page_seventh_line .anime_page_26th_card .anime_page_26th_card_img:hover .homepage_continue_watching_play_btn {
+  animation: fromBottom 0.3s forwards;
+}
 .anime_page_main .anime_page_cards .anime_page_seventh_line .anime_page_26th_card .anime_page_26th_card_img:not(:hover) {
   transition: 0.5s;
+}
+.anime_page_main .anime_page_cards .anime_page_seventh_line .anime_page_26th_card .anime_page_26th_card_img:not(:hover) .homepage_continue_watching_play_btn {
+  animation: toBottom 0.3s forwards;
 }
 .anime_page_main .anime_page_cards .anime_page_card_title {
   font-family: "Poppins", sans-serif;

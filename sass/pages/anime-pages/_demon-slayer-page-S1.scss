@@ -34,6 +34,7 @@
       position: absolute;
       left: 57px;
       top: 400px;
+
       .anime_page_total_episodes {
         @include subtitleStyle;
       }
@@ -41,6 +42,10 @@
       .anime_page_rate_text {
         @include subtitleStyle;
       }
+    }
+
+    .top_amv_btn {
+      @include watchingTrailerBtn;
     }
   }
 }
@@ -147,159 +152,159 @@
     }
 
     .anime_page_third_line {
-        display: flex;
-        gap: 100px;
-        margin-bottom: 100px;
-  
-        .anime_page_ninth_card {
-          .anime_page_ninth_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_10th_card {
-          .anime_page_10th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_11th_card {
-          .anime_page_11th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_12th_card {
-          .anime_page_12th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
+      display: flex;
+      gap: 100px;
+      margin-bottom: 100px;
+
+      .anime_page_ninth_card {
+        .anime_page_ninth_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
         }
       }
 
-      .anime_page_fourth_line {
-        display: flex;
-        gap: 100px;
-        margin-bottom: 100px;
-  
-        .anime_page_13th_card {
-          .anime_page_13th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_14th_card {
-          .anime_page_14th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_15th_card {
-          .anime_page_15th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_16th_card {
-          .anime_page_16th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
+      .anime_page_10th_card {
+        .anime_page_10th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
         }
       }
 
-      .anime_page_fifth_line {
-        display: flex;
-        gap: 100px;
-        margin-bottom: 100px;
-  
-        .anime_page_17th_card {
-          .anime_page_17th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_18th_card {
-          .anime_page_18th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_19th_card {
-          .anime_page_19th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_20th_card {
-          .anime_page_20th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
+      .anime_page_11th_card {
+        .anime_page_11th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
         }
       }
 
-      .anime_page_sixth_line {
-        display: flex;
-        gap: 100px;
-        margin-bottom: 100px;
-  
-        .anime_page_21th_card {
-          .anime_page_21th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
+      .anime_page_12th_card {
+        .anime_page_12th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
         }
-  
-        .anime_page_22th_card {
-          .anime_page_22th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_23th_card {
-          .anime_page_23th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_24th_card {
-          .anime_page_24th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
+      }
+    }
+
+    .anime_page_fourth_line {
+      display: flex;
+      gap: 100px;
+      margin-bottom: 100px;
+
+      .anime_page_13th_card {
+        .anime_page_13th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
         }
       }
 
-      .anime_page_seventh_line {
-        display: flex;
-        gap: 100px;
-  
-        .anime_page_25th_card {
-          .anime_page_25th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
-        }
-  
-        .anime_page_26th_card {
-          .anime_page_26th_card_img {
-            @include animeCard;
-            background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
-          }
+      .anime_page_14th_card {
+        .anime_page_14th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
         }
       }
+
+      .anime_page_15th_card {
+        .anime_page_15th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+
+      .anime_page_16th_card {
+        .anime_page_16th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+    }
+
+    .anime_page_fifth_line {
+      display: flex;
+      gap: 100px;
+      margin-bottom: 100px;
+
+      .anime_page_17th_card {
+        .anime_page_17th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+
+      .anime_page_18th_card {
+        .anime_page_18th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+
+      .anime_page_19th_card {
+        .anime_page_19th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+
+      .anime_page_20th_card {
+        .anime_page_20th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+    }
+
+    .anime_page_sixth_line {
+      display: flex;
+      gap: 100px;
+      margin-bottom: 100px;
+
+      .anime_page_21th_card {
+        .anime_page_21th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+
+      .anime_page_22th_card {
+        .anime_page_22th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+
+      .anime_page_23th_card {
+        .anime_page_23th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+
+      .anime_page_24th_card {
+        .anime_page_24th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+    }
+
+    .anime_page_seventh_line {
+      display: flex;
+      gap: 100px;
+
+      .anime_page_25th_card {
+        .anime_page_25th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+
+      .anime_page_26th_card {
+        .anime_page_26th_card_img {
+          @include animeCard;
+          background-image: url("../../../public/Img/Card/DemonSlayer/DemonSlayerAnimePageBg.jpg");
+        }
+      }
+    }
 
     .anime_page_card_title {
       @include cardTitleStyle;
