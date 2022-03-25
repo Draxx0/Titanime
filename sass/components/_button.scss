@@ -12,6 +12,9 @@
   font-size: 25px;
   line-height: 37px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     background-color: $subtitle-color;

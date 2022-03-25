@@ -410,6 +410,8 @@ li {
 .sign_in_main .sign_in_card .sign_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: auto;
   flex-direction: column;
   gap: 5px;
 }
@@ -427,6 +429,9 @@ li {
   font-size: 25px;
   line-height: 37px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sign_in_main .sign_in_card .sign_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying .sign_in_card_submit_button:hover {
   background-color: #DADADA;
@@ -637,6 +642,9 @@ li {
   font-size: 25px;
   line-height: 37px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying .sign_in_card_submit_button:hover {
   background-color: #DADADA;
@@ -1982,6 +1990,9 @@ li {
   font-size: 25px;
   line-height: 37px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .account_settings_main .account_settings_button:hover {
   background-color: #DADADA;
