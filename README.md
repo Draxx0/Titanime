@@ -2,9 +2,7 @@
 
 <p> Sur une petite veille webdesign je suis tombé sur cette image : </p>
 
-<div align=center>
 https://user-images.githubusercontent.com/97442265/160166751-0c7f2ab6-f81f-4450-9df6-c8db90c25e97.mp4
-</div>
 
 ## Langages utilisées :
 <div align=center>
