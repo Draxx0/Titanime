@@ -25,6 +25,7 @@ utilisateur permettant de voir le rendu en "gros" d'un internaute souhaitant con
 </ul>
 <p> Un chemin semblale à celui présenté est également possible, en cliquant depuis la page d'accueil sur la card "Vinland Saga" </p>
 <p> Il est également possible de naviguer dans chaque page de la navigation </p>
+<p> Ma version est une version simplifié du design final du designer </p>
 
 ## Langages utilisées :
 <div>
