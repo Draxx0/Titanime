@@ -18,7 +18,7 @@ utilisateur permettant de voir le rendu en "gros" d'un internaute souhaitant con
 
 <li> Page d'accueil, cliquer sur "Demon Slayer" sur le header, ou bien cliquer sur la card "Demon Slayer" plus bas </li>
 
-<li> Page sélection épisode/saison, Cliquer sur la card du premier épisode. /li> 
+<li> Page sélection épisode/saison, Cliquer sur la card du premier épisode. </li> 
 
 <li> Page épisode, vous pouvez désormais regarder le premier épisode de demon slayer ! </li> 
 
@@ -30,4 +30,5 @@ utilisateur permettant de voir le rendu en "gros" d'un internaute souhaitant con
 <div>
     <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="Html" height="50px">
     <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" alt="Sass" height="50px">
+    <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JS" height="50px">
 </div>
