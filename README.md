@@ -3,7 +3,9 @@
 <p> Sur une petite veille webdesign je suis tombé sur cette image : </p>
 
 <div align=center>
-    <video src="https://cdn.dribbble.com/users/7175995/screenshots/16387881/media/539e2d3a3b713f2c4309cecec3e895b7.mp4">
+    <video autoplay loop muted>
+    <source src = "https://cdn.dribbble.com/users/7175995/screenshots/16387881/media/539e2d3a3b713f2c4309cecec3e895b7.mp4" type="video/mp4">
+    </video>
 </div>
 
 ## Langages utilisées :
