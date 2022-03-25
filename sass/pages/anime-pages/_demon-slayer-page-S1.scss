@@ -44,8 +44,8 @@
       }
     }
 
-    .top_amv_btn {
-      @include watchingTrailerBtn;
+    .add_to_fav {
+      @include addToFavoriteBtn;
     }
   }
 }

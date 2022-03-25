@@ -10,6 +10,10 @@
 
 @import './components/button';
 
+@import './layouts/loader';
+@import './layouts/nav';
+@import './layouts/footer';
+
 @import './pages/sign-in';
 @import './pages/log-in';
 @import './pages/homepage';

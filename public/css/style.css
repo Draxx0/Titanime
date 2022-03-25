@@ -36,6 +36,191 @@ li {
   color: #DADADA;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b92c27;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::selection {
+  background-color: #b92c27;
+  color: #fff;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #b92c27;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-wrapper .loader_gif {
+  display: inline-block;
+  position: relative;
+  animation: loaderAnimation 2s forwards;
+  width: 50%;
+}
+
+@keyframes loaderAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1000px);
+  }
+}
+.homepage_nav {
+  width: 100%;
+  height: 112px;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  z-index: 3;
+}
+.homepage_nav .homepage_logo {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 61px;
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  padding-left: 57px;
+  cursor: pointer;
+}
+.homepage_nav .homepage_logo:hover {
+  transform: scale(1.05);
+}
+.homepage_nav .homepage_list {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  cursor: pointer;
+}
+.homepage_nav .homepage_list .homepage_list_item {
+  position: relative;
+  font-size: 30px;
+  transition: 0.25s ease-in-out;
+}
+.homepage_nav .homepage_list .homepage_list_item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #b92c27;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.homepage_nav .homepage_list .homepage_list_item:hover::after {
+  transform: scale(1);
+  transform-origin: bottom left;
+}
+.homepage_nav .homepage_account {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  padding-right: 57px;
+}
+.homepage_nav .homepage_account:hover {
+  filter: grayscale(30%);
+  transition: 0.5s;
+}
+.homepage_nav .homepage_account:not(:hover) {
+  transition: 0.5s;
+}
+
+.footer {
+  width: 100%;
+  height: 266px;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  margin-top: 200px;
+}
+.footer .footer_container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+.footer .footer_container .footer_content_displaying {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+}
+.footer .footer_container .footer_content_displaying .first_column {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer .footer_container .footer_content_displaying .first_column .footer_icon {
+  transition: 0.3s ease-in-out;
+}
+.footer .footer_container .footer_content_displaying .first_column .footer_icon:hover {
+  transform: scale(120%);
+  color: #b92c27;
+}
+.footer .footer_container .footer_content_displaying .second_column {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer_container .footer_content_displaying .second_column .footer_list {
+  display: flex;
+  list-style: none;
+  gap: 183px;
+}
+.footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items:hover {
+  transform: scale(120%);
+  color: #b92c27;
+}
+.footer .footer_container .footer_content_displaying .third_column {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer .footer_container .footer_content_displaying .third_column .footer_icon {
+  transition: 0.3s ease-in-out;
+}
+.footer .footer_container .footer_content_displaying .third_column .footer_icon:hover {
+  transform: scale(120%);
+  color: #b92c27;
+}
+
 .sign_in_body {
   background-image: url("../../public/Img/Card/DragonBallZ/DbzBg.jpg");
   background-repeat: no-repeat;
@@ -272,73 +457,6 @@ li {
   color: #ffffff;
 }
 
-.footer {
-  width: 100%;
-  height: 266px;
-  background-color: #0f0f0f;
-  color: #ffffff;
-  margin-top: 200px;
-}
-.footer .footer_container {
-  width: 80%;
-  height: 100%;
-  margin: auto;
-}
-.footer .footer_container .footer_content_displaying {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  height: 100%;
-}
-.footer .footer_container .footer_content_displaying .first_column {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
-}
-.footer .footer_container .footer_content_displaying .second_column {
-  width: 60%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer .footer_container .footer_content_displaying .second_column .footer_list {
-  display: flex;
-  list-style: none;
-  gap: 183px;
-}
-.footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 37px;
-  color: #ffffff;
-  transition: 0.3s ease-in-out;
-}
-.footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items:hover {
-  transform: scale(120%);
-}
-.footer .footer_container .footer_content_displaying .third_column {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-  align-items: flex-end;
-}
-.footer .footer_container .footer_content_displaying .third_column .footer_icon {
-  transition: 0.3s ease-in-out;
-}
-.footer .footer_container .footer_content_displaying .third_column .footer_icon:hover {
-  transform: scale(120%);
-}
-
 @keyframes inputAnim {
   from {
     width: 0px;
@@ -531,74 +649,6 @@ li {
 
 .homepage_body {
   background-color: #1f1f1f;
-}
-
-.homepage_nav {
-  width: 100%;
-  height: 112px;
-  background-color: #0f0f0f;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Poppins", sans-serif;
-  z-index: 3;
-}
-.homepage_nav .homepage_logo {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  line-height: 61px;
-  color: #ffffff;
-  transition: 0.25s ease-in-out;
-  padding-left: 57px;
-  cursor: pointer;
-}
-.homepage_nav .homepage_logo:hover {
-  transform: scale(1.05);
-}
-.homepage_nav .homepage_list {
-  display: flex;
-  justify-content: space-around;
-  gap: 80px;
-  cursor: pointer;
-}
-.homepage_nav .homepage_list .homepage_list_item {
-  position: relative;
-  font-size: 30px;
-  transition: 0.25s ease-in-out;
-}
-.homepage_nav .homepage_list .homepage_list_item:hover {
-  transform: scale(1.05);
-}
-.homepage_nav .homepage_list .homepage_list_item::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #DADADA;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-.homepage_nav .homepage_list .homepage_list_item:hover::after {
-  transform: scale(1);
-  transform-origin: bottom left;
-}
-.homepage_nav .homepage_account {
-  width: 90px;
-  height: 90px;
-  cursor: pointer;
-  padding-right: 57px;
-}
-.homepage_nav .homepage_account:hover {
-  filter: grayscale(30%);
-  transition: 0.5s;
-}
-.homepage_nav .homepage_account:not(:hover) {
-  transition: 0.5s;
 }
 
 .homepage_header {
@@ -834,6 +884,7 @@ li {
   z-index: 2;
   opacity: 0;
   transition: 0.3s ease-in-out;
+  color: #b92c27;
 }
 .homepage_main .homepage_continue_watching_cards .homepage_continue_watching_card_title {
   font-family: "Poppins", sans-serif;
@@ -1508,13 +1559,10 @@ li {
   height: 84px;
   background-color: rgba(218, 218, 218, 0.54);
   border-radius: 10px;
+  transition: ease-in-out 0.3s;
 }
 .account_main .account_social_media .account_instagram_box:hover {
-  opacity: 50%;
-  transition: 0.5s;
-}
-.account_main .account_social_media .account_instagram_box:not(:hover) {
-  transition: 0.5s;
+  background-color: #b92c27;
 }
 .account_main .account_social_media .account_instagram_box .account_instagram_icon {
   width: 100%;
@@ -1528,13 +1576,10 @@ li {
   height: 84px;
   background-color: rgba(218, 218, 218, 0.54);
   border-radius: 10px;
+  transition: ease-in-out 0.3s;
 }
 .account_main .account_social_media .account_twitter_box:hover {
-  opacity: 50%;
-  transition: 0.5s;
-}
-.account_main .account_social_media .account_twitter_box:not(:hover) {
-  transition: 0.5s;
+  background-color: #b92c27;
 }
 .account_main .account_social_media .account_twitter_box .account_twitter_icon {
   width: 100%;
@@ -1548,13 +1593,10 @@ li {
   height: 84px;
   background-color: rgba(218, 218, 218, 0.54);
   border-radius: 10px;
+  transition: ease-in-out 0.3s;
 }
 .account_main .account_social_media .account_facebook_box:hover {
-  opacity: 50%;
-  transition: 0.5s;
-}
-.account_main .account_social_media .account_facebook_box:not(:hover) {
-  transition: 0.5s;
+  background-color: #b92c27;
 }
 .account_main .account_social_media .account_facebook_box .account_facebook_icon {
   width: 100%;
@@ -1780,6 +1822,7 @@ li {
   display: flex;
   gap: 20px;
   position: relative;
+  align-items: center;
 }
 .account_settings_main .account_settings_username .account_settings_username_title {
   font-family: "Poppins", sans-serif;
@@ -1792,10 +1835,12 @@ li {
 .account_settings_main .account_settings_username .account_settings_username_input {
   width: 499px;
   height: 61px;
-  background: #c4c4c4;
-  border-radius: 5px;
+  background: transparent;
+  border: solid 1px #DADADA;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   outline: none;
-  border: none;
   padding: 0px 10px;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -1825,8 +1870,9 @@ li {
 }
 .account_settings_main .account_settings_email {
   display: flex;
-  gap: 20px;
+  gap: 75px;
   position: relative;
+  align-items: center;
 }
 .account_settings_main .account_settings_email .account_settings_email_title {
   font-family: "Poppins", sans-serif;
@@ -1839,10 +1885,12 @@ li {
 .account_settings_main .account_settings_email .account_settings_email_input {
   width: 499px;
   height: 61px;
-  background: #c4c4c4;
-  border-radius: 5px;
+  background: transparent;
+  border: solid 1px #DADADA;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   outline: none;
-  border: none;
   padding: 0px 10px;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -1874,6 +1922,7 @@ li {
   display: flex;
   gap: 20px;
   position: relative;
+  align-items: center;
 }
 .account_settings_main .account_settings_password .account_settings_password_title {
   font-family: "Poppins", sans-serif;
@@ -1886,10 +1935,12 @@ li {
 .account_settings_main .account_settings_password .account_settings_password_input {
   width: 499px;
   height: 61px;
-  background: #c4c4c4;
-  border-radius: 5px;
+  background: transparent;
+  border: solid 1px #DADADA;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   outline: none;
-  border: none;
   padding: 0px 10px;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -2202,7 +2253,7 @@ li {
   line-height: 45px;
   color: #ffffff;
 }
-.anime_page_header .anime_page_video_displaying .top_amv_btn {
+.anime_page_header .anime_page_video_displaying .add_to_fav {
   position: absolute;
   top: 415px;
   left: 350px;
@@ -2218,8 +2269,8 @@ li {
   justify-content: center;
   transition: 0.25s ease-in-out;
 }
-.anime_page_header .anime_page_video_displaying .top_amv_btn:hover {
-  transform: scale(1.05);
+.anime_page_header .anime_page_video_displaying .add_to_fav:hover {
+  transform: scale(1.02);
 }
 
 .anime_page_main .anime_page_select_season {

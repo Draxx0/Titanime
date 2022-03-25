@@ -132,14 +132,10 @@
   height: 84px;
   background-color: $subtitle-color-opa--;
   border-radius: 10px;
+  transition: ease-in-out 0.3s;
 
   &:hover {
-    opacity: 50%;
-    transition: 0.5s;
-  }
-
-  &:not(:hover) {
-    transition: 0.5s;
+    background-color: $hover-color;
   }
 }
 
@@ -207,10 +203,12 @@
 @mixin accountSettingsInput {
   width: 499px;
   height: 61px;
-  background: #c4c4c4;
-  border-radius: 5px;
+  background: transparent;
+  border: solid 1px $subtitle-color;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   outline: none;
-  border: none;
   padding: 0px 10px;
   color: white;
   font-family: $poppins;
@@ -229,7 +227,7 @@
 
 //! BUTTON /////////////////////////////////////////
 
-@mixin watchingTrailerBtn {
+@mixin addToFavoriteBtn {
   position: absolute;
   top: 415px;
   left: 350px;
@@ -245,8 +243,8 @@
   justify-content: center;
   transition: 0.25s ease-in-out;
 
-  &:hover{
-    transform: scale(1.05);
+  &:hover {
+    transform: scale(1.02);
   }
 }
 
@@ -271,6 +269,7 @@
 
   &:hover {
     transform: scale(120%);
+    color: $hover-color;
   }
 }
 
@@ -279,6 +278,7 @@
 
   &:hover {
     transform: scale(120%);
+    color: $hover-color;
   }
 }
 

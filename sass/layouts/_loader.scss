@@ -1,0 +1,28 @@
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $hover-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loader_gif{
+        display: inline-block;
+        position: relative;
+        animation: loaderAnimation 2s forwards;
+        width: 50%;
+    }
+}
+
+@keyframes loaderAnimation{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(1000px);
+    }
+}

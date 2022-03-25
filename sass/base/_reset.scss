@@ -31,3 +31,21 @@ ul {
 li {
   color: $subtitle-color;
 }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b92c27;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::selection {
+  background-color: #b92c27;
+  color: #fff;
+}

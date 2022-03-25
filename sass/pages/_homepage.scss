@@ -2,63 +2,6 @@
   background-color: $body-bg-color;
 }
 
-.homepage_nav {
-  width: 100%;
-  height: 112px;
-  background-color: $nav-bg-color;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: $poppins;
-  z-index: 3;
-
-  .homepage_logo {
-    @include logoStyle;
-    padding-left: 57px;
-    cursor: pointer;
-  }
-
-  .homepage_list {
-    display: flex;
-    justify-content: space-around;
-    gap: 80px;
-    cursor: pointer;
-
-    .homepage_list_item {
-      position: relative;
-      font-size: 30px;
-      transition: 0.25s ease-in-out;
-
-      &:hover {
-        transform: scale(1.05);
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: $subtitle-color;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-      }
-
-      &:hover::after {
-        transform: scale(1);
-        transform-origin: bottom left;
-      }
-    }
-  }
-
-  .homepage_account {
-    @include accountPicture;
-    padding-right: 57px;
-  }
-}
-
 .homepage_header {
   width: 100%;
   height: 100%;
@@ -202,6 +145,7 @@
           z-index: 2;
           opacity: 0;
           transition: 0.3s ease-in-out;
+          color: $hover-color;
         }
       }
     }
