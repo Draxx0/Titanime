@@ -1,7 +1,3 @@
-.animes_body {
-  background-color: $body-bg-color;
-}
-
 .animes_header {
   display: flex;
   justify-content: center;
@@ -25,8 +21,8 @@
     height: 80%;
     border-radius: 30px;
     background-color: $title-color;
-    -webkit-box-shadow: 6px 13px 22px -1px $nav-bg-color;
-    box-shadow: 6px 13px 22px -1px $nav-bg-color;
+    -webkit-box-shadow: -5px 0px 22px -1px #0f0f0f;
+    box-shadow: -5px 0px 22px -1px #0f0f0f;
 
     .animes_carousel_img {
       width: 60%;
