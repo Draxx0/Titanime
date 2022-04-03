@@ -1,6 +1,6 @@
 # Pourquoi ?
 
-<h3> Sur une petite veille webdesign je suis tombé sur une vidéo, ayant vraiment apprécié le design, j'ai donc suivis les codes afin d'y ajouter mes idées. </h3>
+<h3> Sur une petite veille webdesign je suis tombé sur une vidéo, ayant vraiment apprécié le design, j'ai donc suivis les codes et j'y est ajouté mes idées. </h3>
 
 https://user-images.githubusercontent.com/97442265/160166751-0c7f2ab6-f81f-4450-9df6-c8db90c25e97.mp4
 
