@@ -2186,8 +2186,8 @@ li {
   height: 80%;
   border-radius: 30px;
   background-color: #ffffff;
-  -webkit-box-shadow: 6px 13px 22px -1px #0f0f0f;
-  box-shadow: 6px 13px 22px -1px #0f0f0f;
+  -webkit-box-shadow: -5px 0px 22px -1px #0f0f0f;
+  box-shadow: -5px 0px 22px -1px #0f0f0f;
 }
 .animes_header .animes_carousel_container .animes_carousel_img {
   width: 60%;
