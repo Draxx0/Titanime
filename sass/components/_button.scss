@@ -67,3 +67,21 @@
     transition: 0.5s;
   }
 }
+
+@mixin writeCommentBtn {
+  padding: 20px;
+  color: $hover-color;
+  border: 1px solid $hover-color;
+  border-radius: 15px;
+  font-size: 25px;
+  position: relative;
+  background-color: $hover-color;
+  color: white;
+  z-index: 20;
+  transition: ease-in-out 0.35s; 
+
+  &:hover {
+    transform:scale(105%);
+  }
+
+}

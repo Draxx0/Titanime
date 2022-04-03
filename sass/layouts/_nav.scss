@@ -25,6 +25,12 @@
       font-size: 30px;
       transition: 0.25s ease-in-out;
 
+      &.homepage_list_item a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -48,5 +54,6 @@
   .homepage_account {
     @include accountPicture;
     padding-right: 57px;
+    padding-top: 5px;
   }
 }

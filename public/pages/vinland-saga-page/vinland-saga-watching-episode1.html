@@ -13,15 +13,28 @@
   <title>Titanime - Watching - VinlandSaga - Episode 1</title>
 </head>
 
-<body class="anime_watching_body">
+<body>
   <nav class="homepage_nav">
-    <a href="../homepage.html">
-      <h1 class="homepage_logo">Titanime</h1>
+    <a href="../../pages/homepage.html">
+        <h1 class="homepage_logo">
+            Titanime
+        </h1>
     </a>
 
-    <a href="../account.html"><img src="../../Img/Account/Rengoku avatar.jpg" alt="account_pictures"
-        class="homepage_account" /></a>
-  </nav>
+    <ul class="homepage_list">
+        <li class="homepage_list_item"><a href="../../pages/homepage.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+        <li class="homepage_list_item"><a href="../../pages/animes.html">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                Animes</a></li>
+        <li class="homepage_list_item"><a href="/"><i class="fa-solid fa-film"></i>
+                Movies</a></li>
+        <li class="homepage_list_item"><a href="/"><i class="fa-solid fa-circle-question"></i>
+                Help</a></li>
+    </ul>
+
+    <a href="account.html"><img src="../../Img/Account/Rengoku avatar.jpg" alt="account_pictures"
+            class="homepage_account"></a>
+</nav>
 
   <main class="anime_watching_main">
     <section class="anime_watching_informations">
@@ -40,6 +53,78 @@
           Previous Episode
         </button></a>
       <a href="#"><button class="anime_watching_next_episode">Next Episode</button></a>
+    </section>
+
+    <section class="anime_watching_commentary">
+      <h1 class="anime_watching_commentary_title">
+        <strong>Community</strong> Review
+      </h1>
+
+      <div class="anime_watching_commentary_container">
+        <img src="../../Img/Account/Female-Anime.jpg" alt="" class="anime_watching_commentary_profil_picture">
+
+        <div class="anime_watching_commentary_content_container">
+          <div class="anime_watching_commentary_content_header">
+            <h3 class="anime_watching_commentary_author_name">
+              Yoshida Azu
+            </h3>
+            <p class="anime_watching_commentary_date">28/03/2022 | 09:56am</p>
+          </div>
+          <p class="anime_watching_commentary_text">Demon Slayer promet, je ne m'étais toujours pas lancé dans l'anime,
+            mais après avoir finis cet épisode, un vrai coup de coeur foncez ! action, histoire émouvante et intrigue au
+            rendez-vous ! Je vous laisse, j'ai un deuxième épisode à regarder :P</p>
+
+          <div class="anime_watching_commentary_like_container">
+            <i class="fa-solid fa-thumbs-up fa-2x like"></i> <i class="fa-solid fa-thumbs-down fa-2x dislike"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="anime_watching_commentary_container">
+        <img src="../../Img/Account//Runa.jpg" alt="" class="anime_watching_commentary_profil_picture">
+
+        <div class="anime_watching_commentary_content_container">
+          <div class="anime_watching_commentary_content_header">
+            <h3 class="anime_watching_commentary_author_name">
+              Runa Hannata
+            </h3>
+            <p class="anime_watching_commentary_date">10/01/2022 | 07:19pm</p>
+          </div>
+          <p class="anime_watching_commentary_text">Demon Slayer promet, je ne m'étais toujours pas lancé dans l'anime,
+            mais après avoir finis cet épisode, un vrai coup de coeur foncez ! action, histoire émouvante et intrigue au
+            rendez-vous ! Je vous laisse, j'ai un deuxième épisode à regarder :P</p>
+
+          <div class="anime_watching_commentary_like_container">
+            <i class="fa-solid fa-thumbs-up fa-2x like"></i> <i class="fa-solid fa-thumbs-down fa-2x dislike"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="anime_watching_commentary_container">
+        <img src="../../Img/Account/Yuji.jpg" alt="" class="anime_watching_commentary_profil_picture">
+
+        <div class="anime_watching_commentary_content_container">
+          <div class="anime_watching_commentary_content_header">
+            <h3 class="anime_watching_commentary_author_name">
+              Todo Kay
+            </h3>
+            <p class="anime_watching_commentary_date">18/04/2022 | 05:49pm</p>
+          </div>
+          <p class="anime_watching_commentary_text">Demon Slayer promet, je ne m'étais toujours pas lancé dans l'anime,
+            mais après avoir finis cet épisode, un vrai coup de coeur foncez ! action, histoire émouvante et intrigue au
+            rendez-vous ! Je vous laisse, j'ai un deuxième épisode à regarder :P</p>
+
+          <div class="anime_watching_commentary_like_container">
+            <i class="fa-solid fa-thumbs-up fa-2x like"></i> <i class="fa-solid fa-thumbs-down fa-2x dislike"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="comment_container">
+        <label class="comment_title"><strong>Ecrire</strong> un commentaire</label>
+        <textarea id="comment_text" placeholder="Enter your comment here..." cols="30" rows="10"></textarea>
+        <button class="comment_btn">Send comment</button>
+      </div>
     </section>
   </main>
 
@@ -71,6 +156,8 @@
       </div>
     </div>
   </footer>
+
+  <script defer src="../../javascript/comments.js"></script>
 </body>
 
 </html>

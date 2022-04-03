@@ -15,6 +15,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: #1f1f1f;
 }
 
 main {
@@ -54,6 +55,151 @@ li {
   color: #fff;
 }
 
+.anime_watching_commentary {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 150px;
+}
+.anime_watching_commentary .anime_watching_commentary_title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-bottom: 58px;
+}
+.anime_watching_commentary .anime_watching_commentary_container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_profil_picture {
+  border: solid 5px #b92c27;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_content_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 25px 35px;
+  border: 3px solid #b92c27;
+  border-radius: 25px;
+  width: 100%;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_content_container .anime_watching_commentary_content_header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_content_container .anime_watching_commentary_content_header .anime_watching_commentary_author_name {
+  color: black;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_content_container .anime_watching_commentary_content_header .anime_watching_commentary_date {
+  color: grey;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_content_container .anime_watching_commentary_text {
+  color: black;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_content_container .anime_watching_commentary_like_container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 25px;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_content_container .anime_watching_commentary_like_container .fa-solid {
+  color: black;
+  cursor: pointer;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_content_container .anime_watching_commentary_like_container .like:hover {
+  animation: 0.8s hoverLike forwards;
+}
+.anime_watching_commentary .anime_watching_commentary_container .anime_watching_commentary_content_container .anime_watching_commentary_like_container .dislike:hover {
+  animation: 0.8s hoverDislike forwards;
+}
+
+.comment_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.comment_container .comment_title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.comment_container #comment_text {
+  resize: none;
+  color: black;
+  padding: 40px 35px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 20px;
+  caret-color: #b92c27;
+}
+.comment_container #comment_text:focus {
+  outline: none;
+}
+.comment_container .comment_btn {
+  padding: 20px;
+  color: #b92c27;
+  border: 1px solid #b92c27;
+  border-radius: 15px;
+  font-size: 25px;
+  position: relative;
+  background-color: #b92c27;
+  color: white;
+  z-index: 20;
+  transition: ease-in-out 0.35s;
+  cursor: pointer;
+  width: fit-content;
+  margin: 50px auto auto auto;
+}
+.comment_container .comment_btn:hover {
+  transform: scale(105%);
+}
+
+@keyframes hoverLike {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-35deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes hoverDislike {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -115,6 +261,11 @@ li {
   font-size: 30px;
   transition: 0.25s ease-in-out;
 }
+.homepage_nav .homepage_list .homepage_list_item.homepage_list_item a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .homepage_nav .homepage_list .homepage_list_item::after {
   content: "";
   position: absolute;
@@ -136,6 +287,7 @@ li {
   height: 90px;
   cursor: pointer;
   padding-right: 57px;
+  padding-top: 5px;
 }
 .homepage_nav .homepage_account:hover {
   filter: grayscale(30%);
@@ -176,7 +328,7 @@ li {
   transition: 0.3s ease-in-out;
 }
 .footer .footer_container .footer_content_displaying .first_column .footer_icon:hover {
-  transform: scale(120%);
+  transform: scale(110%);
   color: #b92c27;
 }
 .footer .footer_container .footer_content_displaying .second_column {
@@ -192,6 +344,7 @@ li {
   gap: 183px;
 }
 .footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items {
+  position: relative;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -200,9 +353,21 @@ li {
   color: #ffffff;
   transition: 0.3s ease-in-out;
 }
-.footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items:hover {
-  transform: scale(120%);
-  color: #b92c27;
+.footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #b92c27;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.footer .footer_container .footer_content_displaying .second_column .footer_list .footer_items:hover::after {
+  transform: scale(1);
+  transform-origin: bottom left;
 }
 .footer .footer_container .footer_content_displaying .third_column {
   width: 20%;
@@ -217,7 +382,7 @@ li {
   transition: 0.3s ease-in-out;
 }
 .footer .footer_container .footer_content_displaying .third_column .footer_icon:hover {
-  transform: scale(120%);
+  transform: scale(110%);
   color: #b92c27;
 }
 
@@ -653,10 +818,6 @@ li {
 }
 .log_in_card_labels_inputs_displaying .sign_in_card_submit_button_displaying .sign_in_card_submit_button:not(:hover) {
   transition: 0.5s;
-}
-
-.homepage_body {
-  background-color: #1f1f1f;
 }
 
 .homepage_header {
@@ -2003,10 +2164,6 @@ li {
   transition: 0.5s;
 }
 
-.animes_body {
-  background-color: #1f1f1f;
-}
-
 .animes_header {
   display: flex;
   justify-content: center;
@@ -2204,10 +2361,6 @@ li {
     transform: translateX(0px);
   }
 }
-.anime_page_body {
-  background-color: #1f1f1f;
-}
-
 .anime_page_header {
   width: 100%;
   height: 100%;
@@ -3005,10 +3158,6 @@ li {
   line-height: 22px;
   color: #DADADA;
   text-align: center;
-}
-
-.anime_watching_body {
-  background-color: #1f1f1f;
 }
 
 .anime_watching_main {

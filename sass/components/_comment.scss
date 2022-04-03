@@ -1,0 +1,149 @@
+.anime_watching_commentary {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 150px;
+  .anime_watching_commentary_title {
+    @include subtitleStyle;
+    margin-bottom: 58px;
+  }
+
+  .anime_watching_commentary_container {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    .anime_watching_commentary_profil_picture {
+      border: solid 5px $hover-color;
+      border-radius: 100px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .anime_watching_commentary_content_container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: white;
+      padding: 25px 35px;
+      border: 3px solid $hover-color;
+      border-radius: 25px;
+      width: 100%;
+
+      .anime_watching_commentary_content_header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .anime_watching_commentary_author_name {
+          color: black;
+        }
+
+        .anime_watching_commentary_date {
+          color: grey;
+        }
+      }
+      .anime_watching_commentary_text {
+        color: black;
+      }
+
+      .anime_watching_commentary_like_container {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 25px;
+        .fa-solid {
+          color: black;
+          cursor: pointer;
+        }
+
+        .like {
+          &:hover {
+            animation: 0.8s hoverLike forwards;
+          }
+        }
+
+        .dislike {
+          &:hover {
+            animation: 0.8s hoverDislike forwards;
+          }
+        }
+      }
+    }
+  }
+}
+
+.comment_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .comment_title {
+    @include subtitleStyle;
+  }
+
+  #comment_text {
+    resize: none;
+    color: black;
+    padding: 40px 35px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    caret-color: $hover-color;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .comment_btn {
+    @include writeCommentBtn;
+    cursor: pointer;
+    width: fit-content;
+    margin: 50px auto auto auto;
+  }
+}
+
+@keyframes hoverLike {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-35deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(-35deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes hoverDislike {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(35deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(35deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}

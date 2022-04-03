@@ -259,6 +259,7 @@
 }
 
 @mixin footerItemStyle {
+  position: relative;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -267,9 +268,22 @@
   color: $title-color;
   transition: 0.3s ease-in-out;
 
-  &:hover {
-    transform: scale(120%);
-    color: $hover-color;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $hover-color;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover::after {
+    transform: scale(1);
+    transform-origin: bottom left;
   }
 }
 
@@ -277,7 +291,7 @@
   transition: 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(120%);
+    transform: scale(110%);
     color: $hover-color;
   }
 }
