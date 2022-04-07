@@ -20,9 +20,9 @@
     position: absolute;
     left: 15%;
     cursor: pointer;
-    transition: ease-in-out .3s;
+    transition: ease-in-out 0.3s;
 
-    &:hover{
+    &:hover {
       transform: translateX(-10px);
     }
   }
@@ -30,14 +30,14 @@
     position: absolute;
     right: 15%;
     cursor: pointer;
-    transition: ease-in-out .3s;
+    transition: ease-in-out 0.3s;
 
-    &:hover{
+    &:hover {
       transform: translateX(10px);
     }
   }
 
-  #second-anime{
+  #second-anime {
     display: none;
   }
 
