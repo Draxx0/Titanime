@@ -20,14 +20,13 @@
 .sign_in_main {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 188px;
   .sign_in_card {
     @include signInCard;
 
     .sign_in_card_title {
       display: flex;
       justify-content: center;
-      margin-top: 37px;
       margin-bottom: 43px;
       @include titleStyle;
     }
