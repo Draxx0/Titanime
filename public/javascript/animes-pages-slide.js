@@ -6,6 +6,7 @@ const previous = document.querySelector("#previous-page2");
 
 next.addEventListener("click", () => {
   window.scrollTo(0, 0);
+
   page1.style.animation = "changingPageAnimationSlideOut 0.01s forwards";
 
   page1.addEventListener("animationend", onAnimationEndPage1);
@@ -16,6 +17,7 @@ next.addEventListener("click", () => {
 
 previous.addEventListener("click", () => {
   window.scrollTo(0, 0);
+  
   page2.style.animation = "changingPageAnimationSlideOut 0.01s forwards";
 
   page2.addEventListener("animationend", onAnimationEndPage2);

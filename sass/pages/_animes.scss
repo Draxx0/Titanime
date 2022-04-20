@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   height: 600px;
+  position: relative;
 
   .animes_header_overlay {
     position: absolute;
@@ -13,6 +14,31 @@
     background-repeat: no-repeat;
     filter: blur(3px) brightness(40%);
     z-index: -1;
+  }
+
+  .anime_switch_left {
+    position: absolute;
+    left: 15%;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      transform: translateX(-10px);
+    }
+  }
+  .anime_switch_right {
+    position: absolute;
+    right: 15%;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+
+  #second-anime {
+    display: none;
   }
 
   .animes_carousel_container {
@@ -194,6 +220,30 @@
   0% {
     opacity: 0;
     transform: translateX(500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes changingCardAnimationSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+}
+
+@keyframes changingCardAnimationSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(400px);
   }
 
   100% {
